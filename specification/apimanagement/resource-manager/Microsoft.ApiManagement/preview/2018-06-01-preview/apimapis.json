@@ -40,7 +40,7 @@
           "Api"
         ],
         "operationId": "Api_ListByService",
-        "description": "Lists all APIs of the API Management service instance.",
+        "description": "Lists all APIs of the API Management service instance!",
         "externalDocs": {
           "url": "https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-create-apis"
         },
