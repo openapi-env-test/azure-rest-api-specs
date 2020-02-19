@@ -83,7 +83,7 @@
             "$ref": "#/parameters/SupportProviderName"
           },
           {
-            "$ref": "#/parameters/CanonicalSupportPlanType"
+            "$ref": "#/parameters/InvalidType"
           }
         ],
         "responses": {
@@ -124,7 +124,7 @@
             "$ref": "#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/SupportProviderName"
+            "$ref": "#/parameters/InvalidName"
           },
           {
             "$ref": "#/parameters/CanonicalSupportPlanType"
@@ -148,48 +148,6 @@
           },
           "default": {
             "description": "'404' - 'Not Found'.\n'400' - 'Bad Request'",
-            "schema": {
-              "$ref": "#/definitions/ErrorDefinition"
-            }
-          }
-        }
-      },
-      "delete": {
-        "operationId": "SupportPlanTypes_Delete",
-        "description": "Cancels the Canonical support plan of type {type} for the subscription.",
-        "x-ms-long-running-operation": true,
-        "x-ms-examples": {
-          "SupportPlanTypes_Delete": {
-            "$ref": "./examples/SupportPlanTypes_Delete.json"
-          }
-        },
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersionParameter"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionIdParameter"
-          },
-          {
-            "$ref": "#/parameters/SupportProviderName"
-          },
-          {
-            "$ref": "#/parameters/CanonicalSupportPlanType"
-          }
-        ],
-        "responses": {
-          "202": {
-            "description": "Accepted",
-            "headers": {},
-            "schema": {
-              "$ref": "#/definitions/CanonicalSupportPlanResponseEnvelope"
-            }
-          },
-          "204": {
-            "description": "No Content"
-          },
-          "default": {
-            "description": "BadRequest",
             "schema": {
               "$ref": "#/definitions/ErrorDefinition"
             }
@@ -246,13 +204,14 @@
           "type": "string",
           "description": "The provisioning state of the resource.",
           "enum": [
-            "Succeeded",
+            "SucceededInvalid",
             "Failed",
             "Cancelled",
             "Purchasing",
             "Downgrading",
             "Cancelling",
-            "Upgrading"
+            "Upgrading",
+            "Unknown"
           ],
           "x-ms-enum": {
             "name": "ProvisioningState",
