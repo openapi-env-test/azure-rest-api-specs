@@ -21,7 +21,7 @@
           "Operations"
         ],
         "description": "This method gets all the operations.",
-        "operationId": "Operations_List",
+        "operationId": "Operations_Get",
         "consumes": [
           "application/json"
         ],
@@ -57,7 +57,7 @@
         }
       }
     },
-    "/subscriptions/{subscriptionId}/providers/Microsoft.DataBox/jobs": {
+    "/subscriptions/{subscriptionId}/providers/Microsoft.DataBox/jobss": {
       "get": {
         "tags": [
           "Jobs"
@@ -3813,7 +3813,8 @@
             "ValidateSubscriptionIsAllowedToCreateJob",
             "ValidatePreferences",
             "ValidateCreateOrderLimit",
-            "ValidateSkuAvailability"
+            "ValidateSkuAvailability",
+            "UnknownType"
           ],
           "type": "string",
           "x-ms-enum": {
@@ -3843,6 +3844,10 @@
               {
                 "value": "ValidateSkuAvailability",
                 "description": "Identify request and response of active job limit for sku availability."
+              },
+              {
+                "value": "UnknownType",
+                "description": "Simulate a breaking change"
               }
             ]
           }
