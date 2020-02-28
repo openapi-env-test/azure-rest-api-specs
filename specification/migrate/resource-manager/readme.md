@@ -102,7 +102,6 @@ swagger-to-sdk:
   - repo: azure-sdk-for-go
   - repo: azure-sdk-for-js
   - repo: azure-sdk-for-node
-  - repo: azure-skd-for-python
   - repo: azure-cli-extensions
 ```
 
