@@ -18,8 +18,8 @@
     "azure-sdk-for-python": {
       "mainRepository": "openapi-env-test/azure-sdk-for-python"
     },
-    "cli-extension-az": {
-      "mainRepository": "openapi-env-test/cli-extension-az"
+    "azure-cli-extensions": {
+      "mainRepository": "openapi-env-test/azure-cli-extensions"
     },
     "azure-sdk-for-ruby": {
       "mainBranch": "latest",
