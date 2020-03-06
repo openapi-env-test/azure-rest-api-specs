@@ -32,6 +32,7 @@ adminmanagement
 ADTO
 adultscore
 affinitized
+agentpool
 aggregatedcost
 AHUB
 AIAPI
@@ -177,6 +178,7 @@ Baidu
 bangla
 baremetal
 BATCHAI
+batchmanaged
 BAYESIANOPTIMIZATION
 BCDR
 BCWG
@@ -965,6 +967,7 @@ nonpaged
 nonreadable
 nonstarted
 Nonsupported
+nopublicipaddresses
 northcentralus
 northeurope
 nostore
@@ -1132,6 +1135,7 @@ querystring
 querytriggers
 Queretaro
 queueservices
+QueueStatus
 quickbooks
 quicktest
 quniform
@@ -1476,6 +1480,7 @@ Taxii
 templated
 templatelink
 templeton
+temporarydisk
 tensorflow
 teradata
 terminatejob
@@ -1588,6 +1593,7 @@ userflows
 userid
 userpreference
 usersetting
+usermanaged
 USQL
 VAIDK
 varbinary

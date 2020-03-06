@@ -8,4 +8,5 @@ az:
   namespace: azure.mgmt.migrate
   package-name: azure-mgmt-migrate
 python-sdk-output-folder: "$(output-folder)/src/migrate/azext_migrate/vendored_sdks/migrate"
+
 ```
