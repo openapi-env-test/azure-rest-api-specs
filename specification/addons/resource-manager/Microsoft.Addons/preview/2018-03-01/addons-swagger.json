@@ -4,15 +4,22 @@
     "title": "Azure Addons Resource Provider",
     "description": "The service for managing third party addons.",
     "version": "2018-03-01"
+
+
+
   },
+
   "host": "management.azure.com",
   "schemes": [
+
+
+
     "https"
   ],
   "consumes": [
     "application/json"
   ],
-  "produces": [
+  "produces   ": [
     "application/json"
   ],
   "securityDefinitions": {
@@ -32,16 +39,16 @@
         "tags": [
           "Operations"
         ],
-        "operationId": "Operations_List",
+        "operationId": "Operations_List2",
         "description": "Lists all of the available Addons RP operations.",
         "x-ms-examples": {
-          "Operations_List": {
+          "Operations_List2": {
             "$ref": "./examples/Operations_List.json"
           }
         },
-        "parameters": [
+        "parameterssdassa": [
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref  ": "#/abdcedfa"
           }
         ],
         "responses": {
@@ -109,7 +116,7 @@
           "AddonDetails"
         ],
         "operationId": "SupportPlanTypes_CreateOrUpdate",
-        "description": "Creates or updates the Canonical support plan of type {type} for the subscription.",
+        "description  ": "Creates or updates the Canonical support plan of type {type} for the subscription.",
         "x-ms-long-running-operation": true,
         "x-ms-examples": {
           "SupportPlanTypes_CreateOrUpdate": {
