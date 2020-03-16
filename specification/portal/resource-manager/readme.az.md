@@ -5,8 +5,8 @@ These settings apply only when `--az` is specified on the command line.
 ``` yaml $(az)
 az:
   extensions: portal
-  namespace: azure.mgmt.portal
-  package-name: azure-mgmt-portal
+  namespace: azure.mgmt.portal.fake
+  package-name: azure-mgmt-portal.fake
 python-sdk-output-folder: "$(output-folder)/src/portal/azext_portal/vendored_sdks/portal"
   
 #cli:
