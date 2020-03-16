@@ -9,7 +9,7 @@ python:
   azure-arm: true
   license-header: MICROSOFT_MIT_NO_VERSION
   payload-flattening-threshold: 2
-  namespace: azure.mgmt.customproviders
+  namespace: azure.mgmt.customproviders.fake
   package-name: azure-mgmt-customproviders
   package-version: 2018-09-01-preview
   clear-output-folder: true

@@ -5,7 +5,7 @@ These settings apply only when `--az` is specified on the command line.
 ``` yaml $(az)
 az:
   extensions: customproviders
-  namespace: azure.mgmt.customproviders
+  namespace: azure.mgmt.customproviders.fake
   package-name: azure-mgmt-customproviders
 python-sdk-output-folder: "$(output-folder)/src/customproviders/azext_customproviders/vendored_sdks/customproviders"
   
