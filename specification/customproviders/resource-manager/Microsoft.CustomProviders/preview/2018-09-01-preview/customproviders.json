@@ -37,42 +37,6 @@
     }
   },
   "paths": {
-    "/providers/Microsoft.CustomProviders/operations": {
-      "get": {
-        "tags": [
-          "Operations"
-        ],
-        "operationId": "Operations_List",
-        "x-ms-examples": {
-          "List the custom providers operations": {
-            "$ref": "examples/operationsList.json"
-          }
-        },
-        "x-ms-pageable": {
-          "nextLinkName": "nextLink"
-        },
-        "description": "The list of operations provided by Microsoft CustomProviders.",
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersionParameter"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Describe the result of a successful operation.",
-            "schema": {
-              "$ref": "#/definitions/ResourceProviderOperationList"
-            }
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          }
-        }
-      }
-    },
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.CustomProviders/resourceProviders/{resourceProviderName}": {
       "put": {
         "tags": [
@@ -98,15 +62,6 @@
           },
           {
             "$ref": "#/parameters/ApiVersionParameter"
-          },
-          {
-            "name": "resourceProvider",
-            "in": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/CustomRPManifest"
-            },
-            "description": "The parameters required to create or update a custom resource provider definition."
           }
         ],
         "responses": {
