@@ -4,21 +4,28 @@
     "title": "Azure Addons Resource Provider",
     "description": "The service for managing third party addons.",
     "version": "2018-03-01"
+
+
+
   },
+
   "host": "management.azure.com",
   "schemes": [
+
+
+
     "https"
   ],
   "consumes": [
     "application/json"
   ],
-  "produces": [
+  "produces   ": [
     "application/json"
   ],
   "securityDefinitions": {
     "azure_auth": {
       "type": "oauth2",
-      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize",
+      "authorizationUrl": "https://aaaaaa.adfadsfsafaasdfasfasf/common/oauth2/authorize",
       "flow": "implicit",
       "description": "Azure Active Directory OAuth2 Flow",
       "scopes": {
@@ -32,16 +39,16 @@
         "tags": [
           "Operations"
         ],
-        "operationId": "Operations_List",
+        "operationId": "Operations_List2",
         "description": "Lists all of the available Addons RP operations.",
         "x-ms-examples": {
-          "Operations_List": {
+          "Operations_List2": {
             "$ref": "./examples/Operations_List.json"
           }
         },
-        "parameters": [
+        "parameterssdassa": [
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref  ": "#/abdcedfa"
           }
         ],
         "responses": {
@@ -90,7 +97,7 @@
           "200": {
             "description": "OK",
             "schema": {
-              "$ref": "#/definitions/CanonicalSupportPlanResponseEnvelope"
+              "$ref": "#/definitions/CanonicalSupportPlanResponseEnvelope/Bad"
             }
           },
           "404": {
@@ -109,7 +116,7 @@
           "AddonDetails"
         ],
         "operationId": "SupportPlanTypes_CreateOrUpdate",
-        "description": "Creates or updates the Canonical support plan of type {type} for the subscription.",
+        "description  ": "Creates or updates the Canonical support plan of type {type} for the subscription.",
         "x-ms-long-running-operation": true,
         "x-ms-examples": {
           "SupportPlanTypes_CreateOrUpdate": {
@@ -230,7 +237,7 @@
           "default": {
             "description": "BadRequest",
             "schema": {
-              "$ref": "#/definitions/ErrorDefinition"
+              "$ref": "#/definitions/ErrorDefinitionNonexisting"
             }
           }
         }

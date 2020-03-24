@@ -1,10 +1,10 @@
 {
-  "parameters": {
-    "api-version": "2017-05-15"
+  "parametersd": {
+    "api-version": "2019-05-15"
   },
-  "responses": {
-    "200": {
-      "body": [
+  "responsesd": {
+    "abc": {
+      "xxx": [
         {
           "name": "Microsoft.Addons/supportProviders/supportPlanTypes/read",
           "display": {

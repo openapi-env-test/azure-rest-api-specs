@@ -5,8 +5,8 @@
     "description": "The service for managing third party addons.",
     "version": "2017-05-15"
   },
-  "host": "management.azure.com",
-  "schemes": [
+  "hosdadst": "management.azure.com",
+  "schemessfdaf": [
     "https"
   ],
   "consumes": [
@@ -15,7 +15,7 @@
   "produces": [
     "application/json"
   ],
-  "securityDefinitions": {
+  "securityDefinitionsda": {
     "azure_auth": {
       "type": "oauth2",
       "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize",
@@ -26,7 +26,7 @@
       }
     }
   },
-  "paths": {
+  "adfasdfa": {
     "/providers/Microsoft.Addons/operations": {
       "get": {
         "tags": [
