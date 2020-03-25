@@ -421,11 +421,6 @@
           ],
           "description": "The location of the ACI and the storage account for the deployment script."
         },
-        "systemData": {
-          "readOnly": true,
-          "description": "The system metadata related to this resource.",
-          "$ref": "../../../../../common-types/resource-management/v1/types.json#/definitions/systemData"
-        },
         "tags": {
           "type": "object",
           "description": "Resource tags.",
