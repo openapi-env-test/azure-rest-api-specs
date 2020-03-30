@@ -70,7 +70,7 @@ swagger-to-sdk:
   - repo: azure-sdk-for-python
   - repo: azure-sdk-for-js
   - repo: azure-sdk-for-node
-  - repo: azure-cli-extensions
+  - repo: azure-sdk-for-trenton
 ```
 
 ## C#
