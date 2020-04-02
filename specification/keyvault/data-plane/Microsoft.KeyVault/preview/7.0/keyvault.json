@@ -52,7 +52,7 @@
             "schema": {
               "$ref": "#/definitions/KeyCreateParameters"
             },
-            "description": "The parameters to create a key."
+            "description": "The parameters to create a key in test."
           },
           {
             "$ref": "#/parameters/ApiVersionParameter"
