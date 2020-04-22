@@ -11,7 +11,7 @@
   "license": "MIT",
   "devDependencies": {
     "@azure/avocado": "^0.6.3",
-    "@azure/rest-api-specs-scripts": "^0.7.1",
+    "@azure/rest-api-specs-scripts": "^0.7.3",
     "@ts-common/commonmark-to-markdown": "^1.2.0",
     "@ts-common/fs": "0.2.0",
     "@ts-common/iterator": "^0.3.6",
@@ -36,7 +36,7 @@
     "url": "http://github.com/azure/azure-rest-api-specs/issues"
   },
   "scripts": {
-    "postinstall": "ts-node scripts/switch-to-preproduction.ts && tsc",
+    "postinstall": "ts-nodec scripts/switch-to-preproduction.ts && tsc",
     "test": "tsc && mocha -t 500000 --reporter min",
     "spellcheck": "ts-node ./scripts/spellcheck.ts",
     "prettier-check": "ts-node ./scripts/prettier-check.ts",
