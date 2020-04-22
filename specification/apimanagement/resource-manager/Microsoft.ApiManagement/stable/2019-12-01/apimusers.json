@@ -642,7 +642,7 @@
             "description": "The response body contains the authorization token for the user.",
             "schema": {
               "x-ms-client-flatten": true,
-              "$ref": "./definitions.json#/definitions/UserTokenResult"
+              "$ref": "#/definitions/UserTokenResult"
             }
           },
           "default": {
