@@ -129,11 +129,19 @@ uncomment the  `exclude-file` section below and add the file paths.
 #  - $(this-folder)/Microsoft.Example/stable/2010-01-01/somefile.json
 ```
 
+## trenton
+
+These settings apply only when `--trenton` is specified on the command line.
+
 ``` yaml $(trenton)
 trenton:
-  extensions: securityinsights.fake
-  namespace: azure.mgmt.securityinsights.fake
-  package-name: azure-mgmt-securityinsights.fake
-clear-output-folder: true
-``` 
+  cli_name: SecurityInsight
+  azure_arm: true
+  license_header: MICROSOFT_MIT_NO_VERSION
+  payload_flattening_threshold: 2
+  namespace: azure.mgmt.SecurityInsight.1
+  package_name: azure-mgmt-SecurityInsight.1
+  clear_output_folder: false
+```
+
 
