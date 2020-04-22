@@ -28,7 +28,9 @@
     "azure-sdk-for-node": "openapi-env-test/azure-sdk-for-node",
     "azure-sdk-for-trenton": {
       "integrationRepository": "test-repo-billy/azure-sdk-for-trenton",
-      "mainRepository": "test-repo-billy/azure-sdk-for-trenton"
+      "mainRepository": "test-repo-billy/azure-sdk-for-trenton",
+      "secondaryRepository":"test-repo-billy/azure-sdk-for-trenton-ge",
+      "secondaryBranch":"master"
     }
   }
 }
