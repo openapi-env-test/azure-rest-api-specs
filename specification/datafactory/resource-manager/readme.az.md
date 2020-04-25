@@ -32,5 +32,10 @@ cli:
       - where:
             parameter: location
         required: true
+      - where:
+          group: IntegrationRuntimes
+          op: CreateOrUpdate
+          param: properties
+        poly-resource: true
 
 ```
