@@ -113,7 +113,7 @@
         "tags": [
           "factories"
         ],
-        "operationId": "Factories_ConfigureFactoryRepo",
+        "operationId": "Factories_ResetFactoryRepo",
         "x-ms-examples": {
           "Factories_ResetFactoryRepo": {
             "$ref": "./examples/Factories_ConfigureFactoryRepo.json"
