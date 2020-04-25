@@ -1,10 +1,9 @@
 {
   "parameters": {
     "subscriptionId": "12345678-1234-1234-1234-12345678abc",
-    "resourceGroupName": "exampleResourceGroup",
-    "factoryName": "exampleFactoryName",
-    "factory": {
-      "location": "East US",
+    "locationId": "East US",
+    "factoryRepoUpdate": {
+      "factoryResourceId": "/subscriptions/12345678-1234-1234-1234-12345678abc/resourceGroups/exampleResourceGroup/providers/Microsoft.DataFactory/factories/exampleFactoryName",
       "repoConfiguration": {
         "accountName": "githubAccount",
         "collaborationBranch": "githubBranch",
@@ -20,9 +19,9 @@
       "headers": {
         "Date": "Tue, 19 Jun 2018 05:41:50 GMT",
         "X-Content-Type-Options": "nosniff",
-        "x-ms-ratelimit-remaining-subscription-writes": "1193",
-        "x-ms-request-id": "657028b7-5e63-4d7c-b8e7-cb336ed92ff0",
-        "x-ms-correlation-request-id": "657028b7-5e63-4d7c-b8e7-cb336ed92ff0"
+        "x-ms-ratelimit-remaining-subscription-writes": "1191",
+        "x-ms-request-id": "c63640bd-3e5f-4ee0-bae1-cea74f761a7d",
+        "x-ms-correlation-request-id": "c63640bd-3e5f-4ee0-bae1-cea74f761a7d"
       },
       "body": {
         "name": "exampleFactoryName",
@@ -31,11 +30,20 @@
         "properties": {
           "provisioningState": "Succeeded",
           "createTime": "2018-06-19T05:41:50.0041314Z",
-          "version": "2018-06-01"
+          "version": "2018-06-01",
+          "repoConfiguration": {
+            "accountName": "githubAccount",
+            "collaborationBranch": "githubBranch",
+            "repositoryName": "githubRepo",
+            "rootFolder": "folderName",
+            "type": "FactoryGitHubConfiguration"
+          }
         },
-        "eTag": "\"00003e04-0000-0000-0000-5b28979e0000\"",
+        "eTag": "\"00004004-0000-0000-0000-5b28979e0000\"",
         "location": "East US",
-        "tags": {}
+        "tags": {
+          "exampleTag": "exampleValue"
+        }
       }
     }
   }
