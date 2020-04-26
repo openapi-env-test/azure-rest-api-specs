@@ -108,54 +108,6 @@
         }
       }
     },
-    "/subscriptions/{subscriptionId}/providers/Microsoft.DataFactory/locations/{locationId}/configureFactoryRepo": {
-      "post": {
-        "tags": [
-          "factories"
-        ],
-        "operationId": "Factories_ConfigureFactoryRepo",
-        "x-ms-examples": {
-          "Factories_ConfigureFactoryRepo": {
-            "$ref": "./examples/Factories_ConfigureFactoryRepo.json"
-          }
-        },
-        "description": "Updates a factory's repo information.",
-        "parameters": [
-          {
-            "$ref": "#/parameters/subscriptionId"
-          },
-          {
-            "$ref": "#/parameters/locationId"
-          },
-          {
-            "$ref": "#/parameters/api-version"
-          },
-          {
-            "name": "factoryRepoUpdate",
-            "description": "Update factory repo request definition.",
-            "in": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/FactoryRepoUpdate"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK.",
-            "schema": {
-              "$ref": "#/definitions/Factory"
-            }
-          },
-          "default": {
-            "description": "An error response received from the Azure Data Factory service.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        }
-      }
-    },
     "/subscriptions/{subscriptionId}/providers/Microsoft.DataFactory/locations/{locationId}/getFeatureValue": {
       "post": {
         "tags": [
