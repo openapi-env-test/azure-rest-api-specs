@@ -116,7 +116,7 @@
         "operationId": "Factories_ResetFactoryRepo",
         "x-ms-examples": {
           "Factories_ResetFactoryRepo": {
-            "$ref": "./examples/Factories_ResetFactoryRepo.json"
+            "$ref": "./examples/Factories_ConfigureFactoryRepo.json"
           }
         },
         "description": "Reset a factory's repo information.",
