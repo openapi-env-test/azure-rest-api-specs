@@ -28,4 +28,5 @@ cli:
       - where:
             type: 'FactoryVstsConfiguration'
         name: 'vsts_configuration'
+
 ```
