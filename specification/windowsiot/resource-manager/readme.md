@@ -61,6 +61,7 @@ swagger-to-sdk:
   - repo: azure-sdk-for-python
   - repo: azure-sdk-for-java
   - repo: azure-sdk-for-go
+  - repo: azure-sdk-for-trenton
   - repo: azure-sdk-for-js
   - repo: azure-sdk-for-ruby
     after_scripts:
@@ -143,4 +144,33 @@ trenton:
     namespace: windowsiot
     package-name: windowsiot
     clear_output_folder: false
+```
+## cli
+
+These settings apply only when `--cli` is specified on the command line.
+
+``` yaml $(cli)
+cli:
+  cli-name: Services
+  azure-arm: true
+  license-header: MICROSOFT_MIT_NO_VERSION
+  payload-flattening-threshold: 2
+  namespace: azure.mgmt.Services
+  package-name: azure-mgmt-Services
+  clear-output-folder: false
+```
+
+## trenton
+
+These settings apply only when `--trenton` is specified on the command line.
+
+``` yaml $(trenton)
+trenton:
+  cli-name: Services
+  azure-arm: true
+  license-header: MICROSOFT_MIT_NO_VERSION
+  payload-flattening-threshold: 2
+  namespace: azure.mgmt.Services
+  package-name: azure-mgmt-Services
+  clear-output-folder: false
 ```
