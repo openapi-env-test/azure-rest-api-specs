@@ -28,9 +28,4 @@ cli:
       - where:
             type: 'FactoryVstsConfiguration'
         name: 'vsts_configuration'
-      - where:
-          group: IntegrationRuntimes
-          op: CreateOrUpdate
-          param: properties
-        poly-resource: true
 ```
