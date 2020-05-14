@@ -16,6 +16,10 @@
       "mainRepository": "openapi-env-test/azure-sdk-for-net"
     },
     "azure-sdk-for-python": {
+      "mainRepository": "openapi-env-test/azure-sdk-for-python",
+      "mainBranch": "release/v3"
+    },
+    "azure-sdk-for-python-track2": {
       "mainRepository": "openapi-env-test/azure-sdk-for-python"
     },
     "azure-cli-extensions": {
@@ -28,7 +32,9 @@
     "azure-sdk-for-node": "openapi-env-test/azure-sdk-for-node",
     "azure-sdk-for-trenton": {
       "integrationRepository": "test-repo-billy/azure-sdk-for-trenton",
-      "mainRepository": "test-repo-billy/azure-sdk-for-trenton"
+      "mainRepository": "test-repo-billy/azure-sdk-for-trenton",
+      "secondaryRepository":"test-repo-billy/azure-sdk-for-trenton",
+      "secondaryBranch":"secondary"
     }
   }
 }
