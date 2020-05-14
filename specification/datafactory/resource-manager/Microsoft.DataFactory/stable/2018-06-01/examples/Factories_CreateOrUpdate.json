@@ -4,7 +4,14 @@
     "resourceGroupName": "exampleResourceGroup",
     "factoryName": "exampleFactoryName",
     "factory": {
-      "location": "East US"
+      "location": "East US",
+      "repoConfiguration": {
+        "accountName": "githubAccount",
+        "collaborationBranch": "githubBranch",
+        "repositoryName": "githubRepo",
+        "rootFolder": "folderName",
+        "type": "FactoryGitHubConfiguration"
+      }
     },
     "api-version": "2018-06-01"
   },
