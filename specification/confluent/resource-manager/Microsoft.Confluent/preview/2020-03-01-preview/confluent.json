@@ -1,0 +1,716 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Microsoft.Confluent",
+    "version": "2020-03-01-preview"
+  },
+  "host": "management.azure.com",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "security": [
+    {
+      "azure_auth": [
+        "user_impersonation"
+      ]
+    }
+  ],
+  "securityDefinitions": {
+    "azure_auth": {
+      "type": "oauth2",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize",
+      "flow": "implicit",
+      "description": "Azure Active Directory OAuth2 Flow.",
+      "scopes": {
+        "user_impersonation": "impersonate your user account"
+      }
+    }
+  },
+  "paths": {
+    "/providers/Microsoft.Confluent/operations": {
+      "get": {
+        "tags": [
+          "Confluent"
+        ],
+        "summary": "List all operations provided by Microsoft.Confluent for the 2020-03-01-preview api version.",
+        "operationId": "Operations_List",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/OperationListResult"
+            }
+          },
+          "default": {
+            "description": "Default error response.",
+            "schema": {
+              "$ref": "#/definitions/ResourceProviderDefaultErrorResponse"
+            }
+          }
+        },
+        "x-ms-pageable": {
+          "nextLinkName": "nextLink"
+        },
+        "x-ms-examples": {
+          "Operations_List": {
+            "$ref": "./examples/Operations_List.json"
+          }
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/providers/Microsoft.Confluent/confluent": {
+      "get": {
+        "tags": [
+          "Confluent"
+        ],
+        "summary": "List all confluent under the specified subscription.",
+        "operationId": "Confluent_List",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "subscriptionId",
+            "description": "Azure subscription id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ConfluentResourceListResult"
+            }
+          },
+          "default": {
+            "description": "Default error response.",
+            "schema": {
+              "$ref": "#/definitions/ResourceProviderDefaultErrorResponse"
+            }
+          }
+        },
+        "x-ms-pageable": {
+          "nextLinkName": "nextLink"
+        },
+        "x-ms-examples": {
+          "Confluent_List": {
+            "$ref": "./examples/Confluent_List.json"
+          }
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Confluent/confluent": {
+      "get": {
+        "tags": [
+          "Confluent"
+        ],
+        "summary": "List all confluent under the specified resource group.",
+        "operationId": "Confluent_ListByResourceGroup",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "subscriptionId",
+            "description": "Azure subscription id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "resourceGroupName",
+            "description": "Resource group name",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ConfluentResourceListResult"
+            }
+          },
+          "default": {
+            "description": "Default error response.",
+            "schema": {
+              "$ref": "#/definitions/ResourceProviderDefaultErrorResponse"
+            }
+          }
+        },
+        "x-ms-pageable": {
+          "nextLinkName": "nextLink"
+        },
+        "x-ms-examples": {
+          "Confluent_ListByResourceGroup": {
+            "$ref": "./examples/Confluent_ListByResourceGroup.json"
+          }
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Confluent/confluent/{confluentName}": {
+      "get": {
+        "tags": [
+          "Confluent"
+        ],
+        "summary": "Get the properties of a specific confluent resource.",
+        "operationId": "Confluent_Get",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "subscriptionId",
+            "description": "azure subscription id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "resourceGroupName",
+            "description": "resource group name",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "confluentName",
+            "description": "confluent resource name",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ConfluentResource"
+            }
+          },
+          "default": {
+            "description": "Default error response.",
+            "schema": {
+              "$ref": "#/definitions/ResourceProviderDefaultErrorResponse"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "Confluent_Get": {
+            "$ref": "./examples/Confluent_Get.json"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Confluent"
+        ],
+        "summary": "Create Confluent resource",
+        "operationId": "Confluent_Create",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "subscriptionId",
+            "description": "azure subscription id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "resourceGroupName",
+            "description": "resource group name",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "confluentName",
+            "description": "confluent resource name",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "confluent resource model",
+            "schema": {
+              "$ref": "#/definitions/ConfluentResource"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ConfluentResource"
+            }
+          },
+          "201": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ConfluentResource"
+            }
+          },
+          "default": {
+            "description": "Default error response.",
+            "schema": {
+              "$ref": "#/definitions/ResourceProviderDefaultErrorResponse"
+            }
+          }
+        },
+        "x-ms-long-running-operation": true,
+        "x-ms-examples": {
+          "Confluent_Create": {
+            "$ref": "./examples/Confluent_Create.json"
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "Confluent"
+        ],
+        "summary": "Update confluent resource",
+        "operationId": "Confluent_Update",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "subscriptionId",
+            "description": "azure subscription id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "resourceGroupName",
+            "description": "resource group name",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "confluentName",
+            "description": "confluent resource name",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Updated confluent resource",
+            "schema": {
+              "$ref": "#/definitions/ConfluentResource"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ConfluentResource"
+            }
+          },
+          "default": {
+            "description": "Default error response.",
+            "schema": {
+              "$ref": "#/definitions/ResourceProviderDefaultErrorResponse"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "Confluent_Update": {
+            "$ref": "./examples/Confluent_Update.json"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Confluent"
+        ],
+        "summary": "Delete Confluent resource",
+        "operationId": "Confluent_Delete",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "subscriptionId",
+            "description": "azure subscription id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "resourceGroupName",
+            "description": "resource group name",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "confluentName",
+            "description": "confluent resource name",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ConfluentResource"
+            }
+          },
+          "202": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ConfluentResource"
+            }
+          },
+          "default": {
+            "description": "Default error response.",
+            "schema": {
+              "$ref": "#/definitions/ResourceProviderDefaultErrorResponse"
+            }
+          }
+        },
+        "x-ms-long-running-operation": true,
+        "x-ms-examples": {
+          "Confluent_Delete": {
+            "$ref": "./examples/Confluent_Delete.json"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "OperationDisplay": {
+      "description": "The object that represents the operation.",
+      "type": "object",
+      "properties": {
+        "provider": {
+          "description": "Service provider: Microsoft.Confluent",
+          "type": "string"
+        },
+        "resource": {
+          "description": "Type on which the operation is performed, e.g., 'clusters'.",
+          "type": "string"
+        },
+        "operation": {
+          "description": "Operation type, e.g., read, write, delete, etc.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Description of the operation, e.g., 'Write confluent'.",
+          "type": "string"
+        }
+      }
+    },
+    "OperationResult": {
+      "description": "An Confluent REST API operation.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Operation name: {provider}/{resource}/{operation}",
+          "type": "string"
+        },
+        "display": {
+          "$ref": "#/definitions/OperationDisplay"
+        }
+      }
+    },
+    "OperationListResult": {
+      "description": "Result of GET request to list Confluent operations.",
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "List of Confluent operations supported by the Microsoft.Confluent provider.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/OperationResult"
+          }
+        },
+        "nextLink": {
+          "description": "URL to get the next set of operation list results if there are any.",
+          "type": "string"
+        }
+      }
+    },
+    "ErrorResponseBody": {
+      "description": "Response body of Error",
+      "title": "ErrorResponseBody",
+      "type": "object",
+      "properties": {
+        "code": {
+          "description": "Error code",
+          "type": "string"
+        },
+        "message": {
+          "description": "Error message",
+          "type": "string"
+        },
+        "target": {
+          "description": "Error target",
+          "type": "string"
+        },
+        "details": {
+          "description": "Error detail",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ErrorResponseBody"
+          }
+        }
+      }
+    },
+    "ResourceProviderDefaultErrorResponse": {
+      "type": "object",
+      "description": "Default error response for resource provider",
+      "title": "ResourceProviderDefaultErrorResponse",
+      "properties": {
+        "error": {
+          "$ref": "#/definitions/ErrorResponseBody"
+        }
+      }
+    },
+    "ProvisioningState": {
+      "enum": [
+        "Accepted",
+        "Creating",
+        "Updating",
+        "Deleting",
+        "Succeeded",
+        "Failed",
+        "Canceled"
+      ],
+      "type": "string",
+      "description": "Provision states for confluent RP",
+      "title": "ProvisioningState",
+      "x-ms-enum": {
+        "name": "ProvisionState",
+        "modelAsString": true
+      }
+    },
+	"MarketplaceSaasResource": {	
+      "type": "object",	
+      "description": "Marketplace SaaS resource model",	
+      "title": "MarketplaceSaaSResource",	
+      "properties": {	
+        "name": {	
+          "description": "SaaS resource name",	
+          "type": "string",	
+          "readOnly": true	
+        },	
+        "marketplaceSubscription": {	
+          "description": "SaaS subscription",	
+          "$ref": "#/definitions/MarketplaceSubscription"	
+        },	
+        "saasResourceId": {	
+          "description": "SaaS resource id",	
+          "type": "string",	
+          "readOnly": true	
+        },	
+        "planId": {	
+          "description": "Offer plan id",	
+          "type": "string",	
+          "readOnly": true	
+        },	
+        "quantity": {	
+          "description": "Quantity of plan",	
+          "format": "int32",	
+          "type": "integer",	
+          "readOnly": true	
+        }	
+      }	
+    },
+    "ConfluentSubscriptionTypes": {
+      "enum": [
+        "trial",
+        "free",
+        "pro"
+      ],
+      "type": "string",
+      "description": "Subscription types for Confluent offer",
+      "title": "ConfluentSubscriptionTypes",
+      "x-ms-enum": {
+        "name": "ConfluentSubscriptionTypes",
+        "modelAsString": true
+      }
+    },
+    "ConfluentOrganizationProperties": {
+      "type": "object",
+      "description": "Confluent organization properties",
+      "title": "ConfluentOrganizationProperties",
+      "properties": {
+        "name": {
+          "description": "Name of the Confluent organization.",
+          "type": "string",
+          "readOnly": true
+        },
+        "id": {
+          "description": "Id of the Confluent organization.",
+          "type": "string",
+          "readOnly": true
+        },
+        "confluentSubscriptionTypes": {
+          "$ref": "#/definitions/ConfluentSubscriptionTypes"
+        },
+        "apiKey": {
+          "description": "Api key associated to the Confluent organization.",
+          "type": "string"
+        },
+        "applicationKey": {
+          "description": "Application key associated to the Confluent organization.",
+          "type": "string"
+        },
+        "ssOurl": {
+          "format": "uri",
+          "description": "SSO url for the Confluent organization.",
+          "type": "string"
+        }
+      }
+    },
+    "OfferDetail": {
+      "type": "object",
+      "description": "Confluent offer detail",
+      "title": "OfferDetail",
+      "properties": {
+        "publisherId": {
+          "description": "Publisher Id",
+          "type": "string"
+        },
+        "id": {
+          "description": "Offer Id",
+          "type": "string"
+        },
+        "planId": {
+          "description": "Offer Plan Id",
+          "type": "string"
+        }
+      }
+    },
+    "UserDetail": {
+      "type": "object",
+      "description": "Subscriber detail",
+      "title": "UserDetail",
+      "properties": {
+        "firstName": {
+          "description": "First name",
+          "type": "string"
+        },
+        "lastName": {
+          "description": "Last name",
+          "type": "string"
+        },
+        "emailAddress": {
+          "description": "Email address",
+          "type": "string"
+        },
+        "phoneNumber": {
+          "description": "Phone number",
+          "type": "string"
+        }
+      }
+    },
+    "ConfluentProperties": {
+      "type": "object",
+      "description": "Confluent resource properties",
+      "title": "ConfluentProperties",
+      "properties": {
+        "createdTime": {
+          "format": "date-time",
+          "description": "The creation time of the resource.",
+          "type": "string",
+          "readOnly": true
+        },
+        "provisioningState": {
+          "$ref": "#/definitions/ProvisioningState"
+        },
+        "organizationProperties": {
+          "$ref": "#/definitions/ConfluentOrganizationProperties"
+        },
+        "offerDetail": {
+          "$ref": "#/definitions/OfferDetail"
+        },
+        "userDetail": {
+          "$ref": "#/definitions/UserDetail"
+        }
+      }
+    },
+    "ConfluentResource": {
+      "description": "An Confluent resource.",
+      "type": "object",
+      "x-ms-azure-resource": true,
+      "properties": {
+        "id": {
+          "description": "The ARM id of the resource.",
+          "type": "string",
+          "readOnly": true
+        },
+        "name": {
+          "description": "The name of the resource.",
+          "type": "string",
+          "readOnly": true
+        },
+        "type": {
+          "description": "The type of the resource.",
+          "type": "string",
+          "readOnly": true
+        },
+        "properties": {
+          "x-ms-client-flatten": true,
+          "$ref": "#/definitions/ConfluentProperties"
+        },
+        "tags": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "location": {
+          "type": "string"
+        }
+      }
+    },
+    "ConfluentResourceListResult": {
+      "description": "The response of a list operation.",
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "Result of a list operation.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ConfluentResource"
+          }
+        },
+        "nextLink": {
+          "description": "Link to the next set of results, if any.",
+          "type": "string"
+        }
+      }
+    }
+  }
+}
