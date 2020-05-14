@@ -175,7 +175,7 @@ trenton:
     azure_arm: true
     license_header: MICROSOFT_MIT_NO_VERSION
     payload_flattening_threshold: 2
-    namespace: netapp
-    package-name: netapp
+    namespace: netapp.tf
+    package-name: netapp.tf
     clear_output_folder: false
 ```
