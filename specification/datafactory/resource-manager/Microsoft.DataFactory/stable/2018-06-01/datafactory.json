@@ -545,6 +545,52 @@
         }
       }
     },
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataFactory/factories/{factoryName}/getGitHubAccessTokenDemo": {
+      "post": {
+        "tags": [
+          "factories"
+        ],
+        "operationId": "Factories_GetGitHubAccessTokenDemo",
+        "description": "Get GitHub Access Token.",
+        "parameters": [
+          {
+            "$ref": "#/parameters/subscriptionId"
+          },
+          {
+            "$ref": "#/parameters/resourceGroupName"
+          },
+          {
+            "$ref": "#/parameters/factoryName"
+          },
+          {
+            "$ref": "#/parameters/api-version"
+          },
+          {
+            "name": "gitHubAccessTokenRequest",
+            "description": "Get GitHub access token request definition.",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/GitHubAccessTokenRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK.",
+            "schema": {
+              "$ref": "#/definitions/GitHubAccessTokenResponse"
+            }
+          },
+          "default": {
+            "description": "An error response received from the Azure Data Factory service.",
+            "schema": {
+              "$ref": "#/definitions/CloudError"
+            }
+          }
+        }
+      }
+    },
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataFactory/factories/{factoryName}/getDataPlaneAccess": {
       "post": {
         "tags": [
