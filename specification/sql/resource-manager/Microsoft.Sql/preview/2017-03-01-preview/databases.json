@@ -43,9 +43,6 @@
             "schema": {
               "$ref": "#/definitions/DatabaseListResult"
             }
-          },
-          "default": {
-            "description": "*** Error Responses: ***\n\n * 404 SubscriptionDoesNotHaveServer - The requested server was not found"
           }
         },
         "x-ms-pageable": {
