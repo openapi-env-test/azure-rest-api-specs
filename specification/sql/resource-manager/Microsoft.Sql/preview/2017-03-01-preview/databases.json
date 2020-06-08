@@ -533,7 +533,6 @@
           "description": "The collation of the database.",
           "type": "string",
           "x-ms-mutability": [
-            "read",
             "create"
           ]
         },
