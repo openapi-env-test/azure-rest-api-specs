@@ -31,7 +31,6 @@
             }
           }
         },
-        "x-ms-pageable": {
           "nextLinkName": null
         }
       }
