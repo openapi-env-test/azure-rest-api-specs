@@ -4,7 +4,7 @@
 var assert = require("assert"),
   RefParser = require('json-schema-ref-parser'),
   util = require('util'),
-  utils = require('@azure/rest-api-specs-scripts').utils;
+  utils = require('@xiaoxu_dev/rest-api-specs-scripts').utils;
 
 type Context = {
   readonly validator: {
