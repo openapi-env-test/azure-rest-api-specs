@@ -170,7 +170,6 @@
         "tags": [
           "DatabaseReplicationLinks"
         ],
-        "operationId": "NA",
         "description": "Sets which replica database is primary by failing over from the current primary replica database. This operation might result in data loss.",
         "x-ms-examples": {
           "Failover a replication link": {
@@ -198,7 +197,6 @@
             "description": "The name of the database that has the replication link to be failed over."
           },
           {
-            "name": "linkId",
             "in": "path",
             "required": true,
             "type": "string",
