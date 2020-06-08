@@ -248,6 +248,7 @@
           "enum": [
             "Succeeded",
             "Failed",
+            "FAIL",
             "Cancelled",
             "Purchasing",
             "Downgrading",
