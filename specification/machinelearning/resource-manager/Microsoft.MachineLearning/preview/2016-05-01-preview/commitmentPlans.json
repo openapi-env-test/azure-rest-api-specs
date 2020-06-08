@@ -23,7 +23,6 @@
         ],
         "description": "Lists all of the available Azure Machine Learning Studio Commitment Plan RP REST API operations.",
         "operationId": "Operations_List",
-        "responses": {
           "200": {
             "description": "OK.",
             "schema": {
