@@ -65,6 +65,7 @@ Differences in v3 (compared to v2):
 
 ``` yaml $(tag) == 'package-composite-v3'
 input-file:
+- Microsoft.Sql/preview/2017-03-01-preview/databases.json
 - Microsoft.Sql/stable/2014-04-01/backups.json
 - Microsoft.Sql/stable/2014-04-01/connectionPolicies.json
 - Microsoft.Sql/stable/2014-04-01/databaseSecurityAlertPolicies.json
@@ -106,7 +107,6 @@ input-file:
 - Microsoft.Sql/preview/2017-03-01-preview/managedInstanceAdministrators.json
 - Microsoft.Sql/preview/2017-10-01-preview/cancelOperations.json
 - Microsoft.Sql/preview/2017-10-01-preview/cancelPoolOperations.json
-- Microsoft.Sql/preview/2017-10-01-preview/databases.json
 - Microsoft.Sql/preview/2017-10-01-preview/elasticPools.json
 - Microsoft.Sql/preview/2017-10-01-preview/databaseVulnerabilityAssessmentScans.json
 - Microsoft.Sql/preview/2017-10-01-preview/managedDatabaseVulnerabilityAssesmentRuleBaselines.json
