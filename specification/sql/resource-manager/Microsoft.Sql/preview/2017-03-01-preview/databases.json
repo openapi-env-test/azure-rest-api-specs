@@ -551,7 +551,7 @@
           ],
           "type": "string",
           "x-ms-enum": {
-            "name": "SampleName",
+            "name": "CreateMode",
             "modelAsString": true
           },
           "x-ms-mutability": [
@@ -594,7 +594,7 @@
           "type": "string",
           "readOnly": true,
           "x-ms-enum": {
-            "name": "DatabaseStatus",
+            "name": "CreateMode",
             "modelAsString": true
           }
         },
