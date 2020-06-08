@@ -440,9 +440,6 @@
       "properties": {
         "value": {
           "type": "array",
-          "items": {
-            "$ref": "#/definitions/ReplicationLink"
-          },
           "description": "The list of database replication links housed in the database."
         }
       },
