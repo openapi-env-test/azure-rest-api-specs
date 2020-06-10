@@ -104,56 +104,6 @@
           }
         }
       },
-      "put": {
-        "tags": [
-          "AddonDetails"
-        ],
-        "operationId": "SupportPlanTypes_CreateOrUpdate",
-        "description": "Creates or updates the Canonical support plan of type {type} for the subscription.",
-        "x-ms-long-running-operation": true,
-        "x-ms-examples": {
-          "SupportPlanTypes_CreateOrUpdate": {
-            "$ref": "./examples/SupportPlanTypes_CreateOrUpdate.json"
-          }
-        },
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersionParameter"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionIdParameter"
-          },
-          {
-            "$ref": "#/parameters/SupportProviderName"
-          },
-          {
-            "$ref": "#/parameters/CanonicalSupportPlanType"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/CanonicalSupportPlanResponseEnvelope"
-            }
-          },
-          "201": {
-            "description": "Created",
-            "schema": {
-              "$ref": "#/definitions/CanonicalSupportPlanResponseEnvelope"
-            }
-          },
-          "404": {
-            "description": "Not Found"
-          },
-          "default": {
-            "description": "'404' - 'Not Found'.\n'400' - 'Bad Request'",
-            "schema": {
-              "$ref": "#/definitions/ErrorDefinition"
-            }
-          }
-        }
-      },
       "delete": {
         "operationId": "SupportPlanTypes_Delete",
         "description": "Cancels the Canonical support plan of type {type} for the subscription.",
