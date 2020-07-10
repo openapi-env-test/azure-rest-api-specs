@@ -93,6 +93,7 @@ swagger-to-sdk:
   - repo: azure-sdk-for-node
   - repo: azure-sdk-for-js
   - repo: azure-sdk-for-python
+  - repo: azure-resource-manager-schemas
 ```
 
 ## Go

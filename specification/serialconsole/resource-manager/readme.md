@@ -47,6 +47,7 @@ swagger-to-sdk:
   - repo: azure-sdk-for-python
   - repo: azure-sdk-for-go
   - repo: azure-sdk-for-js
+  - repo: azure-resource-manager-schemas
 ```
 
 ## C#

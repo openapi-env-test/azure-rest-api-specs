@@ -81,6 +81,7 @@ swagger-to-sdk:
   - repo: azure-sdk-for-ruby
     after_scripts:
       - bundle install && rake arm:regen_all_profiles['azure_mgmt_datalake_analytics']
+  - repo: azure-resource-manager-schemas
 ```
 
 

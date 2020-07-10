@@ -76,5 +76,6 @@ This is not used by Autorest itself.
 ``` yaml $(swagger-to-sdk)
 swagger-to-sdk:
   - repo: azure-cli-extensions
+  - repo: azure-resource-manager-schemas
 ```
 

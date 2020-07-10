@@ -61,6 +61,7 @@ swagger-to-sdk:
   - repo: azure-sdk-for-ruby
     after_scripts:
       - bundle install && rake arm:regen_all_profiles['azure_mgmt_stor_simple1200_series']
+  - repo: azure-resource-manager-schemas
 ```
 
 

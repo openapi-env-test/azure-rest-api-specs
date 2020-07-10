@@ -112,6 +112,7 @@ swagger-to-sdk:
   - repo: azure-sdk-for-go
   - repo: azure-sdk-for-java
   - repo: azure-sdk-for-trenton
+  - repo: azure-resource-manager-schemas
 ```
 
 

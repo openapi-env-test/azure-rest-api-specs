@@ -76,6 +76,7 @@ swagger-to-sdk:
     after_scripts:
       - bundle install && rake arm:regen_all_profiles['azure_mgmt_portal']
   - repo: azure-cli-extensions
+  - repo: azure-resource-manager-schemas
 ```
 
 ## Go

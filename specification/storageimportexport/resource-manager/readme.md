@@ -54,6 +54,7 @@ swagger-to-sdk:
   - repo: azure-sdk-for-node
   - repo: azure-sdk-for-js
   - repo: azure-cli-extensions
+  - repo: azure-resource-manager-schemas
 ```
 
 ## Go
