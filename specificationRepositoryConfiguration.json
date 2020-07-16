@@ -39,6 +39,9 @@
       "mainRepository": "test-repo-billy/azure-sdk-for-trenton",
       "secondaryRepository":"test-repo-billy/azure-sdk-for-trenton",
       "secondaryBranch":"secondary"
+    },
+    "azure-resource-manager-schemas": {
+      "mainRepository": "azure-resource-manager-schemas"
     }
   }
 }
