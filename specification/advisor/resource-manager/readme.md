@@ -138,9 +138,9 @@ csharp:
 
 See configuration in [readme.java.md](./readme.java.md)
 
-## ARMSchema
+## AzureResourceSchema
 
-See configuration in [readme.armschema.md](./readme.armschema.md)
+See configuration in [readme.azureresourceschema.md](./readme.azureresourceschema.md)
 
 ## Multi-API/Profile support for AutoRest v3 generators
 
