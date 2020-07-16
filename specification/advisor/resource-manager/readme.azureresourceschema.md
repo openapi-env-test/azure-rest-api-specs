@@ -5,7 +5,6 @@ These settings apply only when `--azureresourceschema` is specified on the comma
 ``` yaml $(azureresourceschema)
 azureresourceschema:
   license-header: MICROSOFT_APACHE_NO_VERSION
-  namespace: advisor
   clear-output-folder: true
 ```
 
@@ -22,35 +21,35 @@ batch:
 ### Tag: package-2020-01 and azureresourceschema
 
 These settings apply only when `--tag=package-2020-01 --azureresourceschema` is specified on the command line.
-Please also specify `--azureresourceschema-sdk-folder=<path to the root directory of your azure-sdk-for-azureresourceschema clone>`.
+Please also specify `--azureresourceschema-folder=<path to the root directory of your azure-resource-manager-schemas clone>`.
 
 ``` yaml $(tag) == 'package-2020-01' && $(azureresourceschema)
-output-folder: $(azureresourceschema-sdk-folder)/services/$(namespace)/mgmt/2020-01-01/$(namespace)
+output-folder: $(azureresourceschema-folder)/schemas
 ```
 
 ### Tag: package-2017-04 and azureresourceschema
 
 These settings apply only when `--tag=package-2017-04 --azureresourceschema` is specified on the command line.
-Please also specify `--azureresourceschema-sdk-folder=<path to the root directory of your azure-sdk-for-azureresourceschema clone>`.
+Please also specify `--azureresourceschema-folder=<path to the root directory of your azure-resource-manager-schemas clone>`.
 
 ``` yaml $(tag) == 'package-2017-04' && $(azureresourceschema)
-output-folder: $(azureresourceschema-sdk-folder)/services/$(namespace)/mgmt/2017-04-19/$(namespace)
+output-folder: $(azureresourceschema-folder)/schemas
 ```
 
 ### Tag: package-2017-03 and azureresourceschema
 
 These settings apply only when `--tag=package-2017-03 --azureresourceschema` is specified on the command line.
-Please also specify `--azureresourceschema-sdk-folder=<path to the root directory of your azure-sdk-for-azureresourceschema clone>`.
+Please also specify `--azureresourceschema-folder=<path to the root directory of your azure-resource-manager-schemas clone>`.
 
 ``` yaml $(tag) == 'package-2017-03' && $(azureresourceschema)
-output-folder: $(azureresourceschema-sdk-folder)/services/$(namespace)/mgmt/2017-03-31/$(namespace)
+output-folder: $(azureresourceschema-folder)/schemas
 ```
 
 ### Tag: package-2016-07-preview and azureresourceschema
 
 These settings apply only when `--tag=package-2016-07-preview --azureresourceschema` is specified on the command line.
-Please also specify `--azureresourceschema-sdk-folder=<path to the root directory of your azure-sdk-for-azureresourceschema clone>`.
+Please also specify `--azureresourceschema-folder=<path to the root directory of your azure-resource-manager-schemas clone>`.
 
 ``` yaml $(tag) == 'package-2016-07-preview' && $(azureresourceschema)
-output-folder: $(azureresourceschema-sdk-folder)/services/preview/$(namespace)/mgmt/2016-07-12-preview/$(namespace)
+output-folder: $(azureresourceschema-folder)/schemas
 ```
