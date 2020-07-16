@@ -148,6 +148,7 @@ swagger-to-sdk:
   - repo: azure-sdk-for-js
   - repo: azure-sdk-for-node
   - repo: azure-sdk-for-ruby
+  - repo: azure-resource-manager-schemas
 ```
 
 
@@ -174,6 +175,10 @@ See configuration in [readme.node.md](./readme.node.md)
 ## Ruby
 
 See configuration in [readme.ruby.md](./readme.ruby.md)
+
+## ARMSchema
+
+See configuration in [readme.armschema.md](./readme.armschema.md)
 
 ## Multi-API/Profile support for AutoRest v3 generators 
 

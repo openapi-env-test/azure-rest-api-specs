@@ -82,6 +82,7 @@ swagger-to-sdk:
   - repo: azure-sdk-for-go
   - repo: azure-sdk-for-js
   - repo: azure-sdk-for-node
+  - repo: azure-resource-manager-schemas
 ```
 
 ## Python
@@ -136,6 +137,10 @@ csharp:
 ## Java
 
 See configuration in [readme.java.md](./readme.java.md)
+
+## ARMSchema
+
+See configuration in [readme.armschema.md](./readme.armschema.md)
 
 ## Multi-API/Profile support for AutoRest v3 generators
 
