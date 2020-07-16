@@ -176,9 +176,9 @@ See configuration in [readme.node.md](./readme.node.md)
 
 See configuration in [readme.ruby.md](./readme.ruby.md)
 
-## ARMSchema
+## AzureResourceSchema
 
-See configuration in [readme.armschema.md](./readme.armschema.md)
+See configuration in [readme.azureresourceschema.md](./readme.azureresourceschema.md)
 
 ## Multi-API/Profile support for AutoRest v3 generators 
 
