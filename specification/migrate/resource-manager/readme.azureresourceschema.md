@@ -23,7 +23,7 @@ These settings apply only when `--tag=package-2018-02 --azureresourceschema` is 
 Please also specify `--azureresourceschema-folder=<path to the root directory of your azure-resource-manager-schemas clone>`.
 
 ``` yaml $(tag)=='package-2018-02' && $(azureresourceschema)
-output-folder: $(azureresourceschema-folder)/schemas
+output-folder: $(azureresourceschema-folder)/tmp/schemas
 ```
 
 ### Tag: package-2019-10 and azureresourceschema
@@ -32,7 +32,7 @@ These settings apply only when `--tag=package-2019-10 --azureresourceschema` is 
 Please also specify `--azureresourceschema-folder=<path to the root directory of your azure-resource-manager-schemas clone>`.
 
 ``` yaml $(tag)=='package-2019-10' && $(azureresourceschema)
-output-folder: $(azureresourceschema-folder)/schemas
+output-folder: $(azureresourceschema-folder)/tmp/schemas
 ```
 
 ### Tag: package-2020-01 and azureresourceschema
@@ -41,5 +41,5 @@ These settings apply only when `--tag=package-2020-01 --azureresourceschema` is 
 Please also specify `--azureresourceschema-folder=<path to the root directory of your azure-resource-manager-schemas clone>`.
 
 ``` yaml $(tag)=='package-2020-01' && $(azureresourceschema)
-output-folder: $(azureresourceschema-folder)/schemas
+output-folder: $(azureresourceschema-folder)/tmp/schemas
 ```
