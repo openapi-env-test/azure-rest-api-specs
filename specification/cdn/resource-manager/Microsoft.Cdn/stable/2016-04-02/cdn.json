@@ -79,7 +79,7 @@
           {
             "name": "resourceGroupName",
             "in": "path",
-            "description": "Name of the resource group within the Azure subscription.",
+            "description": "Name of the resource group within the Azure subscription",
             "required": true,
             "type": "string"
           },
