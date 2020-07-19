@@ -73,7 +73,7 @@
         "tags": [
           "Profiles"
         ],
-        "summary": "Lists the CDN profiles within a resource group.",
+        "summary": "Lists the CDN profiles within a resource group",
         "operationId": "Profiles_ListByResourceGroup",
         "parameters": [
           {
