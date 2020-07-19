@@ -27,7 +27,7 @@
           {
             "name": "name",
             "in": "path",
-            "description": "Name of metadata entity.",
+            "description": "Name of metadata entity",
             "required": true,
             "type": "string"
           },

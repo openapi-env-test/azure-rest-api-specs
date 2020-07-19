@@ -22,7 +22,7 @@
   "parameters": {
     "subscriptionId": {
       "name": "subscriptionId",
-      "description": "Azure Subscription Id in which project was created.",
+      "description": "Azure Subscription Id in which project was created",
       "type": "string",
       "in": "path",
       "required": true

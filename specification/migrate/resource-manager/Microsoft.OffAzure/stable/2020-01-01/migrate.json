@@ -29,7 +29,7 @@
           {
             "name": "subscriptionId",
             "in": "path",
-            "description": "The ID of the target subscription.",
+            "description": "The ID of the target subscription",
             "required": true,
             "type": "string"
           },
