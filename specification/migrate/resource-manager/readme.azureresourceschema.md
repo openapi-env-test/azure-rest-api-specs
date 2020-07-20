@@ -5,7 +5,6 @@ These settings apply only when `--azureresourceschema` is specified on the comma
 ``` yaml $(azureresourceschema)
 azureresourceschema:
   license-header: MICROSOFT_APACHE_NO_VERSION
-  clear-output-folder: true
 ```
 
 ### AzureResourceSchema multi-api
