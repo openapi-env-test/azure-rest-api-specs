@@ -21,7 +21,7 @@ These settings apply only when `--tag=package-preview-2019-07 --azureresourcesch
 Please also specify `--azureresourceschema-folder=<path to the root directory of your azure-resource-manager-schemas clone>`.
 
 ``` yaml $(tag) == 'package-preview-2019-07' && $(azureresourceschema)
-output-folder: $(azureresourceschema-folder)/tmp/schemas
+output-folder: $(azureresourceschema-folder)/schemas
 ```
 
 ### Tag: package-2017-03-01-preview and azureresourceschema
@@ -30,5 +30,5 @@ These settings apply only when `--tag=package-2017-03-01-preview --azureresource
 Please also specify `--azureresourceschema-folder=<path to the root directory of your azure-resource-manager-schemas clone>`.
 
 ``` yaml $(tag) == 'package-2017-03-01-preview' && $(azureresourceschema)
-output-folder: $(azureresourceschema-folder)/tmp/schemas
+output-folder: $(azureresourceschema-folder)/schemas
 ```
