@@ -3,7 +3,7 @@
   "info": {
     "version": "2019-07-24-preview",
     "title": "AzureDataManagementClient",
-    "description": "The AzureData management API provides a RESTful set of web APIs to manage Azure Data Resources."
+    "description": "The AzureData management API provides  RESTful set of web APIs to manage Azure Data Resources."
   },
   "host": "management.azure.com",
   "schemes": [
