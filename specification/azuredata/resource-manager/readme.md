@@ -67,6 +67,8 @@ swagger-to-sdk:
     after_scripts:
       - bundle install && rake arm:regen_all_profiles['azure_mgmt_azuredata']
   - repo: azure-resource-manager-schemas
+    after_scripts:
+      - npm install --prefix generator && npm run postprocessor azuredata/resource-manager --prefix generator
 ```
 
 ## Go
