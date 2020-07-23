@@ -3,7 +3,7 @@
   "info": {
     "version": "2017-03-01-preview",
     "title": "AzureDataManagementClient",
-    "description": "The AzureData management API provides a RESTful set of web APIs to manage Azure Data Resources. For example, register, delete and retrieve a SQL Server, SQL Server registration."
+    "description": "The AzureData management API provides a RESTful set of web APIs to manage Azure Data Resources. For example, register, delete and retrieve a SQL Server SQL Server registration."
   },
   "host": "management.azure.com",
   "schemes": [
