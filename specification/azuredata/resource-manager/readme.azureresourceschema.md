@@ -2,11 +2,6 @@
 
 These settings apply only when `--azureresourceschema` is specified on the command line.
 
-``` yaml $(azureresourceschema)
-azureresourceschema:
-  license-header: MICROSOFT_APACHE_NO_VERSION
-```
-
 ### AzureResourceSchema multi-api
 
 ``` yaml $(azureresourceschema) && $(multiapi)
