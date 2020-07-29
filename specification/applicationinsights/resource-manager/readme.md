@@ -406,6 +406,9 @@ swagger-to-sdk:
   - repo: azure-sdk-for-go
   - repo: azure-sdk-for-js
   - repo: azure-sdk-for-node
+  - repo: azure-resource-manager-schemas
+    after_scripts:
+      - npm install --prefix generator && npm run postprocessor applicationinsights/resource-manager --prefix generator && npm install --prefix tools && npm run test --prefix tools
 ```
 
 ## Go
@@ -473,6 +476,10 @@ These settings apply only when `--tag=schema-2018-06-17-preview` is specified on
 input-file:
 - Microsoft.Insights/preview/2018-06-17-preview/workbooks_API.json
 ```
+
+## AzureResourceSchema
+
+See configuration in [readme.azureresourceschema.md](./readme.azureresourceschema.md)
 
 ## Multi-API/Profile support for AutoRest v3 generators
 

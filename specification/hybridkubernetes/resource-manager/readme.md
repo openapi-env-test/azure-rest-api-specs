@@ -57,6 +57,9 @@ swagger-to-sdk:
   - repo: azure-sdk-for-net
     after_scripts:
       - bundle install && rake arm:regen_all_profiles['azure_mgmt_hybridkubernetes']
+  - repo: azure-resource-manager-schemas
+    after_scripts:
+      - npm install --prefix generator && npm run postprocessor hybridkubernetes/resource-manager --prefix generator && npm install --prefix tools && npm run test --prefix tools
 ```
 
 ## Go
@@ -78,6 +81,10 @@ See configuration in [readme.csharp.md](./readme.csharp.md)
 ## Java
 
 See configuration in [readme.java.md](./readme.java.md)
+
+## AzureResourceSchema
+
+See configuration in [readme.azureresourceschema.md](./readme.azureresourceschema.md)
 
 ## Multi-API/Profile support for AutoRest v3 generators 
 

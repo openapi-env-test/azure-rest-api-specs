@@ -550,6 +550,9 @@ swagger-to-sdk:
   - repo: azure-sdk-for-ruby
     after_scripts:
       - bundle install && rake arm:regen_all_profiles['azure_mgmt_monitor']
+  - repo: azure-resource-manager-schemas
+    after_scripts:
+      - npm install --prefix generator && npm run postprocessor monitor/resource-manager --prefix generator && npm install --prefix tools && npm run test --prefix tools
 ```
 
 ## Python
@@ -598,6 +601,10 @@ input-file:
 - Microsoft.Insights/stable/2015-04-01/eventCategories_API.json
 - Microsoft.Insights/stable/2015-04-01/operations_API.json
 ```
+
+## AzureResourceSchema
+
+See configuration in [readme.azureresourceschema.md](./readme.azureresourceschema.md)
 
 ## Multi-API/Profile support for AutoRest v3 generators 
 
