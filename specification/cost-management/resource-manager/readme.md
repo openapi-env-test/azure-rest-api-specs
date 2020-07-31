@@ -204,6 +204,9 @@ swagger-to-sdk:
     after_scripts:
       - bundle install && rake arm:regen_all_profiles['azure_mgmt_costmanagement']
   - repo: azure-cli-extensions
+  - repo: azure-resource-manager-schemas
+    after_scripts:
+      - npm install --prefix generator && npm run postprocessor cost-management/resource-manager --prefix generator && npm install --prefix tools && npm run test --prefix tools
 ```
 
 ## C#
@@ -326,6 +329,10 @@ java:
 regenerate-manager: true
 generate-interface: true
 ```
+
+## AzureResourceSchema
+
+See configuration in [readme.azureresourceschema.md](./readme.azureresourceschema.md)
 
 ## Multi-API/Profile support for AutoRest v3 generators
 

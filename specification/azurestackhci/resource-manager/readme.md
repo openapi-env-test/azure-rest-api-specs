@@ -67,6 +67,9 @@ swagger-to-sdk:
   - repo: azure-sdk-for-ruby
     after_scripts:
       - bundle install && rake arm:regen_all_profiles['azure_mgmt_azurestackhci']
+  - repo: azure-resource-manager-schemas
+    after_scripts:
+      - npm install --prefix generator && npm run postprocessor azurestackhci/resource-manager --prefix generator && npm install --prefix tools && npm run test --prefix tools
 ```
 
 ## Go
@@ -88,6 +91,10 @@ See configuration in [readme.typescript.md](./readme.typescript.md)
 ## CSharp
 
 See configuration in [readme.csharp.md](./readme.csharp.md)
+
+## AzureResourceSchema
+
+See configuration in [readme.azureresourceschema.md](./readme.azureresourceschema.md)
 
 ## Multi-API/Profile support for AutoRest v3 generators 
 
