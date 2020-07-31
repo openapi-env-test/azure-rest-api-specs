@@ -82,7 +82,7 @@
             "schema": {
               "$ref": "#/definitions/Cluster"
             },
-            "description": "The Kusto cluster parameters supplied to the CreateOrUpdate operation."
+            "description": "The Kusto cluster parameters supplied t the CreateOrUpdate operation."
           },
           {
             "$ref": "#/parameters/SubscriptionIdParameter"
