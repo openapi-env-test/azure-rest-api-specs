@@ -897,7 +897,7 @@
               "x-ms-client-flatten": true,
               "type": "object",
               "properties": {
-                "provisioningState": {
+                "provisionState": {
                   "readOnly": true,
                   "type": "string",
                   "description": "The provisioning state of the container group. This only appears in the response."
