@@ -4444,7 +4444,7 @@
         },
         "prefixLength": {
           "description": "The length of the prefix of the ip address.",
-          "type": "integer"
+          "type": "string"
         }
       }
     },
