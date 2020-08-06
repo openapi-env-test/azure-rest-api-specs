@@ -115,7 +115,7 @@ swagger-to-sdk:
   - repo: azure-cli-extensions
   - repo: azure-resource-manager-schemas
     after_scripts:
-      - npm install --prefix generator && npm run postprocessor guestconfiguration/resource-manager --prefix generator && npm install --prefix tools && npm run test --prefix tools
+      - node sdkauto_afterscript.js guestconfiguration/resource-manager
 ```
 
 

@@ -71,7 +71,7 @@ swagger-to-sdk:
   - repo: azure-sdk-for-go
   - repo: azure-resource-manager-schemas
     after_scripts:
-      - npm install --prefix generator && npm run postprocessor migrateprojects/resource-manager --prefix generator && npm install --prefix tools && npm run test --prefix tools
+      - node sdkauto_afterscript.js migrateprojects/resource-manager
 ```
 
 ## Go

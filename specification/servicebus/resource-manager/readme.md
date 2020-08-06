@@ -84,7 +84,7 @@ swagger-to-sdk:
       - bundle install && rake arm:regen_all_profiles['azure_mgmt_service_bus']
   - repo: azure-resource-manager-schemas
     after_scripts:
-      - npm install --prefix generator && npm run postprocessor servicebus/resource-manager --prefix generator && npm install --prefix tools && npm run test --prefix tools
+      - node sdkauto_afterscript.js servicebus/resource-manager
 ```
 
 

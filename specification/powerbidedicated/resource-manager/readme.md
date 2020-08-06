@@ -57,7 +57,7 @@ swagger-to-sdk:
   - repo: azure-sdk-for-python
   - repo: azure-resource-manager-schemas
     after_scripts:
-      - npm install --prefix generator && npm run postprocessor powerbidedicated/resource-manager --prefix generator && npm install --prefix tools && npm run test --prefix tools
+      - node sdkauto_afterscript.js powerbidedicated/resource-manager
 ```
 
 ## C#

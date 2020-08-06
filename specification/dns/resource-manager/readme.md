@@ -162,7 +162,7 @@ swagger-to-sdk:
       - bundle install && rake arm:regen_all_profiles['azure_mgmt_dns']
   - repo: azure-resource-manager-schemas
     after_scripts:
-      - npm install --prefix generator && npm run postprocessor dns/resource-manager --prefix generator && npm install --prefix tools && npm run test --prefix tools
+      - node sdkauto_afterscript.js dns/resource-manager
 ```
 
 ## Go

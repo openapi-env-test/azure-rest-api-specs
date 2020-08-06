@@ -60,7 +60,7 @@ This is not used by Autorest itself.
 swagger-to-sdk:
   - repo: azure-resource-manager-schemas
     after_scripts:
-      - npm install --prefix generator && npm run postprocessor intune/resource-manager --prefix generator && npm install --prefix tools && npm run test --prefix tools
+      - node sdkauto_afterscript.js intune/resource-manager
 ```
 ## C# 
 
