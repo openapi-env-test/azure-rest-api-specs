@@ -47,3 +47,4 @@ Please also specify `--azureresourceschema-folder=<path to the root directory of
 ``` yaml $(tag) == 'package-2020-01-01' && $(azureresourceschema)
 output-folder: $(azureresourceschema-folder)/schemas
 ```
+
