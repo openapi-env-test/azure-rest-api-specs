@@ -87,39 +87,6 @@
       }
     },
     "/subscriptions/{subscriptionId}/providers/Microsoft.Advisor/configurations": {
-      "get": {
-        "tags": [
-          "Configurations"
-        ],
-        "summary": "Retrieve Azure Advisor configurations.",
-        "description": "Retrieve Azure Advisor configurations and also retrieve configurations of contained resource groups.",
-        "operationId": "Configurations_ListBySubscription",
-        "parameters": [
-          {
-            "$ref": "#/parameters/apiVersionParameter"
-          },
-          {
-            "$ref": "#/parameters/subscriptionIdParameter"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK. Successfully retrieved zero or more configurations.",
-            "schema": {
-              "$ref": "#/definitions/ConfigurationListResult"
-            }
-          }
-        },
-        "deprecated": false,
-        "x-ms-pageable": {
-          "nextLinkName": "nextLink"
-        },
-        "x-ms-examples": {
-          "GetConfigurations": {
-            "$ref": "./examples/ListConfigurations.json"
-          }
-        }
-      },
       "put": {
         "tags": [
           "Configurations"
