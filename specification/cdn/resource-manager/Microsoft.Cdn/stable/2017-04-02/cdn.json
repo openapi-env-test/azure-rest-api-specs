@@ -1917,7 +1917,7 @@
         }
       ],
       "properties": {
-        "sku": {
+        "skt": {
           "description": "The pricing tier (defines a CDN provider, feature list and rate) of the CDN profile.",
           "$ref": "#/definitions/Sku"
         },
@@ -1927,7 +1927,7 @@
         }
       },
       "required": [
-        "sku"
+        "skt"
       ]
     },
     "ProfileProperties": {
