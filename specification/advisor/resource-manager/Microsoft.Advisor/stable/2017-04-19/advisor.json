@@ -522,7 +522,7 @@
             "type": "string"
           },
           {
-            "name": "name",
+            "name": "nameTest",
             "in": "path",
             "description": "The name of the suppression.",
             "required": true,
