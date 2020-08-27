@@ -195,7 +195,7 @@
             "$ref": "#/parameters/subscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/apiVersionParameter"
+            "$ref": "#/parameters/subscriptionIdParameter"
           }
         ],
         "responses": {
