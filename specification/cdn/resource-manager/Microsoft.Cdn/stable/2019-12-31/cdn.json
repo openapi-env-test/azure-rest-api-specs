@@ -597,6 +597,13 @@
             "type": "string"
           },
           {
+            "name": "Name",
+            "in": "path",
+            "description": "Name of the CDN profile which is unique within the resource group.",
+            "required": true,
+            "type": "string"
+          },
+          {
             "name": "endpointName",
             "in": "path",
             "description": "Name of the endpoint under the profile which is unique globally.",
