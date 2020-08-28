@@ -15,11 +15,11 @@ jobs:
   dependsOn: FilterSdkRepos
   condition: contains(dependencies.FilterSdkRepos.outputs['FilterSdkRepos.EnabledJobs'], '${{ parameters.repoName }}')
   variables:
-  - templates: common/Variables.yml
+  - template: common/Variables.yml
     EXECUTION_MODE: SDK_GEN
     SDK_REPO_NAME: ${{ parameters.repoName }}
   steps:
   - checkout: none
-  - templates: common/GetPRNumber.yml
-  - templates: common/PullImage.yml
-  - templates: common/RunSDKAutomation.yml
+  - template: common/GetPRNumber.yml
+  - template: common/PullImage.yml
+  - template: common/RunSDKAutomation.yml
