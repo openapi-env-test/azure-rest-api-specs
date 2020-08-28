@@ -6,10 +6,12 @@ jobs:
   timeoutInMinutes: 180
   variables:
   - template: common/Variables.yml
-    EXECUTION_MODE: SDK_FILTER
+    parameters:
+      executionMode: SDK_FILTER
   steps:
   - checkout: none
   - template: common/GetPRNumber.yml
   - template: common/PullImage.yml
   - template: common/RunSDKAutomation.yml
-    name: FilterSdkRepos
+    parameters:
+      stepName: FilterSdkRepos
