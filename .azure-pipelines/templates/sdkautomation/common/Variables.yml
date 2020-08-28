@@ -1,6 +1,16 @@
+parameters:
+- name: executionMode
+  type: string
+  default: 'SDK_GEN'
+- name: sdkRepoName
+  type: string
+  default: ''
+
 variables:
-    NODE_OPTIONS: '--max-old-space-size=8192'
-    BLOB_STORAGE_PREFIX: sdkautomation-pipeline
-    SPEC_REPO: $(Build.Repository.Name)
-    PR_NUMBER: $(System.PullRequest.PullRequestNumber)
-    BUILD_ID: $(Build.BuildId)
+  EXECUTION_MODE: ${{ parameters.executionMode}}
+  SDK_REPO_NAME: ${{ parameters.sdkRepoName }}
+  NODE_OPTIONS: '--max-old-space-size=8192'
+  BLOB_STORAGE_PREFIX: sdkautomation-pipeline
+  SPEC_REPO: $(Build.Repository.Name)
+  PR_NUMBER: $(System.PullRequest.PullRequestNumber)
+  BUILD_ID: $(Build.BuildId)
