@@ -16,8 +16,8 @@ jobs:
   condition: contains(dependencies.FilterSdkRepos.outputs['FilterSdkRepos.EnabledJobs'], '${{ parameters.repoName }}')
   variables:
   - template: common/Variables.yml
-    EXECUTION_MODE: SDK_GEN
-    SDK_REPO_NAME: ${{ parameters.repoName }}
+    parameters:
+      sdkRepoName: ${{ parameters.repoName }}
   steps:
   - checkout: none
   - template: common/GetPRNumber.yml
