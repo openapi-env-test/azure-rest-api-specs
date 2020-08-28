@@ -13,12 +13,39 @@ variables:
 
 jobs:
 - template: templates/sdkautomation/FilterSdkRepos.yml
-- template: templates/sdkautomation/AzureSdkForNet.yml
-- template: templates/sdkautomation/AzureSdkForJava.yml
-- template: templates/sdkautomation/AzureSdkForJs.yml
-- template: templates/sdkautomation/AzureSdkForPython.yml
-- template: templates/sdkautomation/AzureSdkForPythonTrack2.yml
-- template: templates/sdkautomation/AzureCliExtensions.yml
-- template: templates/sdkautomation/AzureSdkForGo.yml
-- template: templates/sdkautomation/AzureSdkForTrenton.yml
-- template: templates/sdkautomation/AzureResourceManagerSchemas.yml
+- template: templates/sdkautomation/RunForSdkRepos.yml
+  parameters:
+    jobName: AzureSdkForNet
+    repoName: azure-sdk-for-net
+- template: templates/sdkautomation/RunForSdkRepos.yml
+  parameters:
+    jobName: AzureSdkForJava
+    repoName: azure-sdk-for-java
+- template: templates/sdkautomation/RunForSdkRepos.yml
+  parameters:
+    jobName: AzureSdkForJs
+    repoName: azure-sdk-for-js
+- template: templates/sdkautomation/RunForSdkRepos.yml
+  parameters:
+    jobName: AzureSdkForPython
+    repoName: azure-sdk-for-python
+- template: templates/sdkautomation/RunForSdkRepos.yml
+  parameters:
+    jobName: AzureSdkForPythonTrack2
+    repoName: azure-sdk-for-python-track2
+- template: templates/sdkautomation/RunForSdkRepos.yml
+  parameters:
+    jobName: AzureCliExtensions
+    repoName: azure-cli-extensions
+- template: templates/sdkautomation/RunForSdkRepos.yml
+  parameters:
+    jobName: AzureSdkForGo
+    repoName: azure-sdk-for-go
+- template: templates/sdkautomation/RunForSdkRepos.yml
+  parameters:
+    jobName: AzureSdkForTrenton
+    repoName: azure-sdk-for-trenton
+- template: templates/sdkautomation/RunForSdkRepos.yml
+  parameters:
+    jobName: AzureResourceManagerSchemas
+    repoName: azure-resource-manager-schemas
