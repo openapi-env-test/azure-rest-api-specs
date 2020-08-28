@@ -5,11 +5,11 @@ jobs:
     vmImage: 'Ubuntu 18.04'
   timeoutInMinutes: 180
   variables:
-  - templates: template/SDKAutomationVariables.yml
+  - templates: common/Variables.yml
     EXECUTION_MODE: SDK_FILTER
   steps:
   - checkout: none
-  - templates: template/GetPRNumber.yml
-  - templates: template/PullImage.yml
-  - templates: template/RunSDKAutomation.yml
+  - templates: common/GetPRNumber.yml
+  - templates: common/PullImage.yml
+  - templates: common/RunSDKAutomation.yml
     name: FilterSdkRepos
