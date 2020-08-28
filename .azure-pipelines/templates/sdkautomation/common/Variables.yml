@@ -4,7 +4,7 @@ parameters:
   default: 'SDK_GEN'
 - name: sdkRepoName
   type: string
-  default: ''
+  default: 'place-holder'
 
 variables:
   EXECUTION_MODE: ${{ parameters.executionMode}}
