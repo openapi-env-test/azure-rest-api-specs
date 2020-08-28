@@ -1,3 +1,8 @@
+parameters:
+- name: stepName
+  type: string
+  default: 'RunForSdkRepos'
+
 steps:
   - script: |
       docker run \
@@ -23,3 +28,4 @@ steps:
       GITHUBAPP_PRIVATE_KEY: $(githubapp-private-key)
       AZURE_DEVOPS_EXT_PAT: $(azure-devops-ext-pat)
     displayName: SDK Automation
+    name: ${{ parameters.stepName }}
