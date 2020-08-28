@@ -15,37 +15,37 @@ jobs:
 - template: templates/sdkautomation/FilterSdkRepos.yml
 - template: templates/sdkautomation/RunForSdkRepos.yml
   parameters:
-    jobName: AzureSdkForNet
+    jobName: Net
     repoName: azure-sdk-for-net
 - template: templates/sdkautomation/RunForSdkRepos.yml
   parameters:
-    jobName: AzureSdkForJava
+    jobName: Java
     repoName: azure-sdk-for-java
 - template: templates/sdkautomation/RunForSdkRepos.yml
   parameters:
-    jobName: AzureSdkForJs
+    jobName: JavaScript
     repoName: azure-sdk-for-js
 - template: templates/sdkautomation/RunForSdkRepos.yml
   parameters:
-    jobName: AzureSdkForPython
+    jobName: Python
     repoName: azure-sdk-for-python
 - template: templates/sdkautomation/RunForSdkRepos.yml
   parameters:
-    jobName: AzureSdkForPythonTrack2
+    jobName: PythonT2
     repoName: azure-sdk-for-python-track2
 - template: templates/sdkautomation/RunForSdkRepos.yml
   parameters:
-    jobName: AzureCliExtensions
+    jobName: Cliextensions
     repoName: azure-cli-extensions
 - template: templates/sdkautomation/RunForSdkRepos.yml
   parameters:
-    jobName: AzureSdkForGo
+    jobName: Go
     repoName: azure-sdk-for-go
 - template: templates/sdkautomation/RunForSdkRepos.yml
   parameters:
-    jobName: AzureSdkForTrenton
+    jobName: Trenton
     repoName: azure-sdk-for-trenton
 - template: templates/sdkautomation/RunForSdkRepos.yml
   parameters:
-    jobName: AzureResourceManagerSchemas
+    jobName: Schema
     repoName: azure-resource-manager-schemas
