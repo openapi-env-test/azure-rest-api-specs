@@ -1,0 +1,25 @@
+parameters:
+- name: jobName
+  type: string
+  default: ''
+- name: repoName
+  type: string
+  default: ''
+
+jobs:
+- job: ${{ parameters.jobName }}
+  displayName: Run SDKAutomation for ${{ parameters.repoName }}
+  pool:
+    vmImage: 'Ubuntu 18.04'
+  timeoutInMinutes: 180
+  dependsOn: FilterSdkRepos
+  condition: contains(dependencies.FilterSdkRepos.outputs['FilterSdkRepos.EnabledJobs'], '${{ parameters.repoName }}')
+  variables:
+  - templates: common/Variables.yml
+    EXECUTION_MODE: SDK_GEN
+    SDK_REPO_NAME: ${{ parameters.repoName }}
+  steps:
+  - checkout: none
+  - templates: common/GetPRNumber.yml
+  - templates: common/PullImage.yml
+  - templates: common/RunSDKAutomation.yml
