@@ -1931,7 +1931,8 @@
         }
       },
       "required": [
-        "sku"
+        "sku",
+        "demo"
       ]
     },
     "ProfileProperties": {
