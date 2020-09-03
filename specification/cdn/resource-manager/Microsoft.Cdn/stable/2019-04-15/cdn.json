@@ -2119,7 +2119,7 @@
           ],
           "type": "string",
           "x-ms-enum": {
-            "name": "EndpointResourceState",
+            "name": "Demo",
             "modelAsString": true
           }
         },
@@ -3876,7 +3876,7 @@
           ],
           "type": "string",
           "x-ms-enum": {
-            "name": "CustomDomainResourceState",
+            "name": "Demo",
             "modelAsString": true
           }
         },
