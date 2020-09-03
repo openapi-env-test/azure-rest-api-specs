@@ -1921,6 +1921,10 @@
           "description": "The pricing tier (defines a CDN provider, feature list and rate) of the CDN profile.",
           "$ref": "#/definitions/Sku"
         },
+        "demo": {
+          "description": "Property for demo.",
+          "$ref": "#/definitions/Demo"
+        },
         "properties": {
           "x-ms-client-flatten": true,
           "$ref": "#/definitions/ProfileProperties"
@@ -2895,6 +2899,24 @@
           "type": "string",
           "x-ms-enum": {
             "name": "SkuName",
+            "modelAsString": true
+          }
+        }
+      },
+      "type": "object"
+    },
+    "Demo": {
+      "description": "Property for demo.",
+      "properties": {
+        "name": {
+          "description": "Name of the demo property.",
+          "enum": [
+            "Demo1",
+            "Demo2"
+          ],
+          "type": "string",
+          "x-ms-enum": {
+            "name": "DemoName",
             "modelAsString": true
           }
         }
