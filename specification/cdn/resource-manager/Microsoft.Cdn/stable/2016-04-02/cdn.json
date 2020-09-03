@@ -1687,7 +1687,7 @@
           ],
           "type": "string",
           "x-ms-enum": {
-            "name": "ProfileResourceState",
+            "name": "Demo",
             "modelAsString": false
           }
         },
@@ -1834,7 +1834,7 @@
           ],
           "type": "string",
           "x-ms-enum": {
-            "name": "EndpointResourceState",
+            "name": "Demo",
             "modelAsString": false
           }
         },
