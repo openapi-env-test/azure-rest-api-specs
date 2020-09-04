@@ -57,6 +57,8 @@ input-file:
 - Microsoft.Synapse/preview/2020-04-01-preview/operations.json
 - Microsoft.Synapse/preview/2020-04-01-preview/sqlPool.json
 - Microsoft.Synapse/preview/2020-04-01-preview/sqlDatabase.json
+- Microsoft.Synapse/preview/2020-04-01-preview/workloadGroup.json
+- Microsoft.Synapse/preview/2020-04-01-preview/workloadClassifier.json
 ```
 
 ## Suppressions
@@ -153,6 +155,8 @@ input-file:
   - $(this-folder)/Microsoft.Synapse/preview/2020-04-01-preview/operations.json
   - $(this-folder)/Microsoft.Synapse/preview/2020-04-01-preview/sqlPool.json
   - $(this-folder)/Microsoft.Synapse/preview/2020-04-01-preview/sqlDatabase.json
+  - $(this-folder)/Microsoft.Synapse/preview/2020-04-01-preview/workloadGroup.json
+  - $(this-folder)/Microsoft.Synapse/preview/2020-04-01-preview/workloadClassifier.json
 
 ```
 
