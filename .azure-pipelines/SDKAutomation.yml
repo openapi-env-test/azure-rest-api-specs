@@ -8,8 +8,8 @@ pr:
   autoCancel: false
 
 variables:
-  IMAGE: azopenapi.azurecr.io/openapi/sdk-automation:prod
-  REGISTRY_ENDPOINT: azopenapi-registry
+  IMAGE: azopenapitest.azurecr.io/openapi/sdk-automation:test
+  REGISTRY_ENDPOINT: openapi platform test acr registry
 
 jobs:
 - job: "SDKAutomation"
@@ -64,6 +64,10 @@ jobs:
     displayName: Pull SDK Automation Image
   - script: |
       docker run \
+        -e BLOB_PROXY_PREFIX \
+        -e BLOB_STORAGE_PREFIX \
+        -e BLOB_STORAGE_IS_PUBLIC \
+        -e BLOB_DOWNLOAD_COMMAND \
         -e BLOB_STORAGE_NAME \
         -e BLOB_STORAGE_KEY \
         -e GITHUB_COMMENT_AUTHOR_NAME \
@@ -80,6 +84,10 @@ jobs:
     env:
       BLOB_STORAGE_NAME: $(blob-storage-name)
       BLOB_STORAGE_KEY: $(blob-storage-key)
+      BLOB_STORAGE_PREFIX: $(blob-storage-prefix)
+      BLOB_PROXY_PREFIX: $(blob-proxy-prefix)
+      BLOB_STORAGE_IS_PUBLIC: $(blob-is-public)
+      BLOB_DOWNLOAD_COMMAND: $(blob-download-command)
       GITHUB_COMMENT_AUTHOR_NAME: $(github-comment-author-name)
       GITHUBAPP_ID: $(githubapp-id)
       GITHUBAPP_PRIVATE_KEY: $(githubapp-private-key)
