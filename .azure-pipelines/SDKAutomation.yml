@@ -74,7 +74,6 @@ jobs:
         -e GITHUBAPP_ID \
         -e GITHUBAPP_PRIVATE_KEY \
         -e NODE_OPTIONS \
-        -e BLOB_STORAGE_PREFIX \
         -e SPEC_REPO \
         -e PR_NUMBER \
         -e SDK_REPO_NAME \
