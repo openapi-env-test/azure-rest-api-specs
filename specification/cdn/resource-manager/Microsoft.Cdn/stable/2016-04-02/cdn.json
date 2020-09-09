@@ -2426,6 +2426,20 @@
             "name": "SkuName",
             "modelAsString": false
           }
+        },
+        "nametest": {
+          "description": "Name of the pricing tier",
+          "enum": [
+            "Standard_Verizon",
+            "Premium_Verizon",
+            "Custom_Verizon",
+            "Standard_Akamai"
+          ],
+          "type": "string",
+          "x-ms-enum": {
+            "name": "SkuName",
+            "modelAsString": false
+          }
         }
       },
       "type": "object"
