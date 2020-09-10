@@ -3429,7 +3429,6 @@
           "url": "https://docs.microsoft.com/en-us/rest/api/billing/"
         },
         "operationId": "BillingSubscriptions_ChangeInvoiceSection",
-        "x-ms-long-running-operation": true,
         "x-ms-examples": {
           "MoveBillingSubscription": {
             "$ref": "./examples/ChangeInvoiceSection.json"
