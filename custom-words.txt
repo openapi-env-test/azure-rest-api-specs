@@ -453,6 +453,7 @@ deleteconsumergroup
 deletedcertificates
 deletedkeys
 deletedsecrets
+deletedservices
 deletedstorage
 deletefailed
 deleteissuers
