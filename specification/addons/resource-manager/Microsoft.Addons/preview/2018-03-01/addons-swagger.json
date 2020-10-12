@@ -33,7 +33,7 @@
           "Operations"
         ],
         "operationId": "Operations_List",
-        "description": "Lists all of the available Addons RP operations.",
+        "description": "Lists all of the available Addons RP operations. xx",
         "x-ms-examples": {
           "Operations_List": {
             "$ref": "./examples/Operations_List.json"
@@ -431,7 +431,7 @@
       "type": "string",
       "description": "The Canonical support plan type.",
       "enum": [
-        "Essential",
+        "EssentialXX",
         "Standard",
         "Advanced"
       ],
