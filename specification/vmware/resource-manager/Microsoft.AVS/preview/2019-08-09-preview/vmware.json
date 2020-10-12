@@ -43,6 +43,14 @@
       "description": ""
     },
     {
+      "name": "VMWareDatastoreBackings",
+      "description": ""
+    },
+    {
+      "name": "VMWareDatastores",
+      "description": ""
+    },
+    {
       "name": "Operations",
       "description": ""
     },
@@ -88,6 +96,22 @@
       "required": true,
       "type": "string",
       "description": "Name of the cluster in the private cloud",
+      "x-ms-parameter-location": "method"
+    },
+    "vmwareDatastoreBackingName": {
+      "name": "vmwareDatastoreBackingName",
+      "in": "path",
+      "required": true,
+      "type": "string",
+      "description": "Name of the datastore backing (eg. remote NFS/iSCSI volumes) which is used for datastores in the private cloud",
+      "x-ms-parameter-location": "method"
+    },
+    "vmwareDatastoreName": {
+      "name": "vmwareDatastoreName",
+      "in": "path",
+      "required": true,
+      "type": "string",
+      "description": "Name of the VMWare datastore which serves as a container for storing VM files",
       "x-ms-parameter-location": "method"
     }
   },
@@ -790,6 +814,125 @@
         "x-ms-examples": {
           "PrivateClouds_ListAdminCredentials": {
             "$ref": "./examples/PrivateClouds_ListAdminCredentials.json"
+          }
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AVS/privateClouds/{privateCloudName}/clusters/{clusterName}/vmwareDatastoreBackings/{vmwareDatastoreBackingName}": {
+      "put": {
+        "operationId": "VMWareDatastoreBackings_Create",
+        "x-ms-long-running-operation": true,
+        "tags": [
+          "VMWareDatastoreBackings"
+        ],
+        "summary": "Create a datastore backing for the private cloud's cluster",
+        "parameters": [
+          {
+            "$ref": "#/parameters/subscriptionId"
+          },
+          {
+            "$ref": "#/parameters/resourceGroupName"
+          },
+          {
+            "$ref": "#/parameters/privateCloudName"
+          },
+          {
+            "$ref": "#/parameters/clusterName"
+          },
+          {
+            "$ref": "#/parameters/vmwareDatastoreBackingName"
+          },
+          {
+            "name": "backingType",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "enum": [
+              "NFSv3",
+              "iSCSI"
+            ],
+            "description": "The type or protocol of the datastore backing, like NFSv3 or NFSv4 or iSCSI"
+          },
+          {
+            "name": "backingResourceID",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "The resource ID of the NFS/iSCSI volume"
+          },
+          {
+            "$ref": "#/parameters/apiVersion"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/Resource"
+            }
+          },
+          "default": {
+            "description": "Error response describing why the operation failed",
+            "schema": {
+              "$ref": "#/definitions/ApiError"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "VMWareDatastoreBackings_Create": {
+            "$ref": "./examples/VMWareDatastoreBackings_Create.json"
+          }
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AVS/privateClouds/{privateCloudName}/clusters/{clusterName}/vmwareDatastoreBackings/{vmwareDatastoreBackingName}/vmwareDatastores/{vmwareDatastoreName}": {
+      "put": {
+        "operationId": "VMWareDatastore_Create",
+        "x-ms-long-running-operation": true,
+        "tags": [
+          "VMWareDatastores"
+        ],
+        "summary": "Create a datastore for the private cloud",
+        "parameters": [
+          {
+            "$ref": "#/parameters/subscriptionId"
+          },
+          {
+            "$ref": "#/parameters/resourceGroupName"
+          },
+          {
+            "$ref": "#/parameters/privateCloudName"
+          },
+          {
+            "$ref": "#/parameters/clusterName"
+          },
+          {
+            "$ref": "#/parameters/vmwareDatastoreBackingName"
+          },
+          {
+            "$ref": "#/parameters/vmwareDatastoreName"
+          },
+          {
+            "$ref": "#/parameters/apiVersion"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/Resource"
+            }
+          },
+          "default": {
+            "description": "Error response describing why the operation failed",
+            "schema": {
+              "$ref": "#/definitions/ApiError"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "VMWareDatastore_Create": {
+            "$ref": "./examples/VMWareDatastore_Create.json"
           }
         }
       }
