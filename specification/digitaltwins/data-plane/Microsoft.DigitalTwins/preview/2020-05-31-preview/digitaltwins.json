@@ -22,7 +22,7 @@
           "Models"
         ],
         "description": "Uploads one or more models. When any error occurs, no models are uploaded.\nStatus codes:\n200 (OK): Success.\n400 (Bad Request): The request is invalid.\n409 (Conflict): One or more of the provided models already exist.",
-        "operationId": "DigitalTwinModels_Add",
+        "operationId": "ShivangiTest_DigitalTwinModels_Add",
         "x-ms-examples": {
           "ModelAdd": {
             "$ref": "./examples/ModelAdd.json"
