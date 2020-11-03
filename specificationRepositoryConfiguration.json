@@ -51,7 +51,11 @@
     "openapi-env-test/azure-rest-api-specs": {
       "sdkRepositoryMappings": {
         "azure-sdk-for-go": {
+<<<<<<< zhenglaizhang-patch-2
           "mainBranch": "latest",
+=======
+          "mainBranch": "sdk-automation",
+>>>>>>> master
           "mainRepository": "openapi-env-test/azure-sdk-for-go"
         },
         "azure-sdk-for-java": {
@@ -86,6 +90,17 @@
         },
         "azure-resource-manager-schemas": {
           "mainRepository": "openapi-env-test/azure-resource-manager-schemas"
+<<<<<<< zhenglaizhang-patch-2
+=======
+        },
+        "azure-sdk-for-net-shivangi": {
+          "mainRepository": "openapi-env-test/azure-sdk-for-net",
+          "mainBranch": "Shivangi_AutomationScript"
+        },
+        "azure-sdk-for-java-track2": {
+          "mainRepository": "openapi-env-test/azure-sdk-for-java",
+          "mainBranch": "v2"
+>>>>>>> master
         }
       }
     }
