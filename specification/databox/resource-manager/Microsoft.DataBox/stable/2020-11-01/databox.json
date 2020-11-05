@@ -224,63 +224,6 @@
         }
       }
     },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataBox/locations/{location}/validateInputs": {
-      "post": {
-        "tags": [
-          "Service"
-        ],
-        "description": "This method does all necessary pre-job creation validation under resource group.",
-        "operationId": "Service_ValidateInputsByResourceGroup",
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/subscriptionIdParameter"
-          },
-          {
-            "$ref": "#/parameters/resourceGroupNameParameter"
-          },
-          {
-            "$ref": "#/parameters/locationParameter"
-          },
-          {
-            "$ref": "#/parameters/apiVersionParameter"
-          },
-          {
-            "name": "validationRequest",
-            "in": "body",
-            "description": "Inputs of the customer.",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/ValidationRequest"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "The validation status and responses of each validating parameter.",
-            "schema": {
-              "$ref": "#/definitions/ValidationResponse"
-            }
-          },
-          "default": {
-            "description": "Error response describing reason for operation failure.",
-            "schema": {
-              "$ref": "#/definitions/ApiError"
-            }
-          }
-        },
-        "x-ms-examples": {
-          "ValidateInputsByResourceGroup": {
-            "$ref": "./examples/ValidateInputsByResourceGroup.json"
-          }
-        }
-      }
-    },
     "/subscriptions/{subscriptionId}/providers/Microsoft.DataBox/locations/{location}/validateInputs": {
       "post": {
         "tags": [
