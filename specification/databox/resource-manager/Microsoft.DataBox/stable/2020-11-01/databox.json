@@ -109,66 +109,6 @@
         }
       }
     },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataBox/locations/{location}/availableSkus": {
-      "post": {
-        "tags": [
-          "Service"
-        ],
-        "description": "This method provides the list of available skus for the given subscription, resource group and location.",
-        "operationId": "Service_ListAvailableSkusByResourceGroup",
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/subscriptionIdParameter"
-          },
-          {
-            "$ref": "#/parameters/resourceGroupNameParameter"
-          },
-          {
-            "$ref": "#/parameters/locationParameter"
-          },
-          {
-            "$ref": "#/parameters/apiVersionParameter"
-          },
-          {
-            "name": "availableSkuRequest",
-            "in": "body",
-            "description": "Filters for showing the available skus.",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/AvailableSkuRequest"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "The list of available skus under Resource group.",
-            "schema": {
-              "$ref": "#/definitions/AvailableSkusResult"
-            }
-          },
-          "default": {
-            "description": "Error response describing reason for operation failure.",
-            "schema": {
-              "$ref": "#/definitions/ApiError"
-            }
-          }
-        },
-        "x-ms-pageable": {
-          "nextLinkName": "nextLink"
-        },
-        "x-ms-examples": {
-          "AvailableSkusPost": {
-            "$ref": "./examples/AvailableSkusPost.json"
-          }
-        }
-      }
-    },
     "/subscriptions/{subscriptionId}/providers/Microsoft.DataBox/locations/{location}/validateAddress": {
       "post": {
         "tags": [
