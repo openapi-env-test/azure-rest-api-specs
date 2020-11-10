@@ -37,7 +37,7 @@
     }
   },
   "paths": {
-    "/providers/Microsoft.Devices/operations": {
+    "/providers/Microsoft.Devices/operation": {
       "get": {
         "tags": [
           "Operations"
@@ -80,7 +80,7 @@
         ],
         "summary": "Get the non-security related metadata of an IoT hub",
         "description": "Get the non-security related metadata of an IoT hub.",
-        "operationId": "IotHubResource_Get",
+        "operationId": "IotHubDeviceResource_Get",
         "x-ms-examples": {
           "IotHubResource_Get": {
             "$ref": "./examples/iothub_get.json"
