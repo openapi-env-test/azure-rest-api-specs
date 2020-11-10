@@ -121,7 +121,7 @@
           "Profiles"
         ],
         "description": "Gets a CDN profile with the specified profile name under the specified subscription and resource group.",
-        "operationId": "Profiles_Get",
+        "operationId": "Profiles_GetXXX",
         "x-ms-examples": {
           "Profiles_Get": {
             "$ref": "./examples/Profiles_Get.json"
@@ -174,13 +174,6 @@
         "parameters": [
           {
             "$ref": "#/parameters/resourceGroupNameParameter"
-          },
-          {
-            "name": "profileName",
-            "in": "path",
-            "description": "Name of the CDN profile which is unique within the resource group.",
-            "required": true,
-            "type": "string"
           },
           {
             "description": "Profile properties needed to create a new profile.",
