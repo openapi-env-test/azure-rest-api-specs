@@ -58,9 +58,9 @@
           "200": {
             "description": "OK. The request has succeeded.",
             "schema": {
-              "$ref": "#/definitions/ProfileListResult"
+              "$ref: "#/definitions/ProfileListResult"
             }
-          },
+          }
           "default": {
             "description": "CDN error response describing why the operation failed.",
             "schema": {
