@@ -56,7 +56,7 @@
             "$ref": "./examples/BatchAccountCreate_SystemAssignedIdentity.json"
           }
         },
-        "description": "Creates a new Batch account with the specified parameters. Existing accounts cannot be updated with this API and should instead be updated with the Update Batch Account API.",
+        "description": "Creates a new Batch account with the specifiedxx parameters. Existing accounts cannot be updated with this API and should instead be updated with the Update Batch Account API.",
         "parameters": [
           {
             "$ref": "#/parameters/ResourceGroupNameParameter"
