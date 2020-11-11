@@ -121,7 +121,7 @@
         "tags": [
           "BatchAccount"
         ],
-        "operationId": "BatchAccount_Update",
+        "operationId": "BatchAccount_UpdateXX",
         "x-ms-examples": {
           "BatchAccountUpdate": {
             "$ref": "./examples/BatchAccountUpdate.json"
