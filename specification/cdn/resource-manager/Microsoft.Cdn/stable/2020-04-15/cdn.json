@@ -62,7 +62,7 @@
             }
           }
           "default": {
-            "description": "CDN error response describing why the operation failed.",
+            "description": "CDN error response describing why the operation failed. x",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
