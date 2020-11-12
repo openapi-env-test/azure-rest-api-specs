@@ -202,7 +202,7 @@
         "tags": [
           "AddonStatus"
         ],
-        "operationId": "SupportPlanTypes_ListInfo",
+        "operationId": "SupportPlanTypes_ListInfoXX",
         "description": "Returns the canonical support plan information for all types for the subscription.",
         "x-ms-examples": {
           "CanonicalListSupportPlanInfo_Post": {
