@@ -1,0 +1,37 @@
+{
+  "parameters": {
+            "subscriptionId": "442bd25d-ab9a-481b-bde7-f1dcd2261007",
+            "resourceGroupName": "rg_d0c769c1-a266-4d5a-a3f9-98aabd1a85e8",
+            "workspaceName": "srv_1d436f22-1efb-4d22-92cc-c5e4889d075d",
+            "sqlPoolName": "95cc706d-b432-4924-ad1a-4078f10a188f",
+            "schemaName": "schema1",
+            "tableName": "table1",
+            "api-version": "2020-04-01-preview"
+          },
+  "responses": {
+           "200": {
+                 "body": {
+                        "value": [
+                               {
+                                 "properties": {
+                                          "columnType": "nvarchar",
+                                          "isComputed": false
+                                        },
+                                 "id": "/subscriptions/442bd25d-ab9a-481b-bde7-f1dcd2261007/resourceGroups/rg_d0c769c1-a266-4d5a-a3f9-98aabd1a85e8/providers/Microsoft.Synapse/workspaces/srv_1d436f22-1efb-4d22-92cc-c5e4889d075d/sqlPools/95cc706d-b432-4924-ad1a-4078f10a188f/schemas/schema1/tables/table1/columns/column1",
+                                 "name": "column1",
+                                 "type": "Microsoft.Synapse/workspaces/sqlPools/schemas/tables/columns"
+                               },
+                               {
+                                 "properties": {
+                                          "columnType": "bit",
+                                          "isComputed": false
+                                        },
+                                 "id": "/subscriptions/442bd25d-ab9a-481b-bde7-f1dcd2261007/resourceGroups/rg_d0c769c1-a266-4d5a-a3f9-98aabd1a85e8/providers/Microsoft.Synapse/workspaces/srv_1d436f22-1efb-4d22-92cc-c5e4889d075d/sqlPools/95cc706d-b432-4924-ad1a-4078f10a188f/schemas/schema1/tables/table1/columns/column2",
+                                 "name": "column2",
+                                 "type": "Microsoft.Synapse/workspaces/sqlPools/schemas/tables/columns"
+                               }
+                             ]
+                      }
+               }
+         }
+}

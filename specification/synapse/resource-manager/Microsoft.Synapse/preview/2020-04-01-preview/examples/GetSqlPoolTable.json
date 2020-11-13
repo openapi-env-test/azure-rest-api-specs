@@ -1,0 +1,24 @@
+{
+  "parameters": {
+            "subscriptionId": "e42ffdff-5b26-4ac8-ba13-12e90533b420",
+            "resourceGroupName": "rg_89a9f612-fb72-436d-8d9d-b31b44bf32dc",
+            "workspaceName": "srv_b8f43c7e-9045-41fa-b71a-632c320b1408",
+            "sqlPoolName": "9cf69e21-7217-442b-bd4f-e21c80f78e81",
+            "schemaName": "schema1",
+            "tableName": "table1",
+            "api-version": "2020-04-01-preview"
+          },
+  "responses": {
+           "200": {
+                 "body": {
+                        "properties": {
+                                 "temporalType": "NonTemporalTable",
+                                 "memoryOptimized": false
+                               },
+                        "id": "/subscriptions/e42ffdff-5b26-4ac8-ba13-12e90533b420/resourceGroups/rg_89a9f612-fb72-436d-8d9d-b31b44bf32dc/providers/Microsoft.Synapse/workspaces/srv_b8f43c7e-9045-41fa-b71a-632c320b1408/sqlPools/9cf69e21-7217-442b-bd4f-e21c80f78e81/schemas/schema1/tables/table1",
+                        "name": "table1",
+                        "type": "Microsoft.Synapse/workspaces/sqlPools/schemas/tables"
+                      }
+               }
+         }
+}

@@ -1,0 +1,36 @@
+{
+  "parameters": {
+            "subscriptionId": "9cf50740-6a9b-4fc0-9f49-f83d78aa0308",
+            "resourceGroupName": "rg_4bc9423a-4aa1-4630-b2d5-743afcd51185",
+            "workspaceName": "srv_cced01f7-582d-483a-908d-ec8ebe33db13",
+            "sqlPoolName": "f2da35a0-16fe-4456-b0bf-b2355e843150",
+            "schemaName": "schema1",
+            "api-version": "2020-04-01-preview"
+          },
+  "responses": {
+           "200": {
+                 "body": {
+                        "value": [
+                               {
+                                 "properties": {
+                                          "temporalType": "NonTemporalTable",
+                                          "memoryOptimized": false
+                                        },
+                                 "id": "/subscriptions/9cf50740-6a9b-4fc0-9f49-f83d78aa0308/resourceGroups/rg_4bc9423a-4aa1-4630-b2d5-743afcd51185/providers/Microsoft.Synapse/workspaces/srv_cced01f7-582d-483a-908d-ec8ebe33db13/sqlPools/f2da35a0-16fe-4456-b0bf-b2355e843150/schemas/schema1/tables/table1",
+                                 "name": "table1",
+                                 "type": "Microsoft.Synapse/workspaces/sqlPools/schemas/tables"
+                               },
+                               {
+                                 "properties": {
+                                          "temporalType": "NonTemporalTable",
+                                          "memoryOptimized": false
+                                        },
+                                 "id": "/subscriptions/9cf50740-6a9b-4fc0-9f49-f83d78aa0308/resourceGroups/rg_4bc9423a-4aa1-4630-b2d5-743afcd51185/providers/Microsoft.Synapse/workspaces/srv_cced01f7-582d-483a-908d-ec8ebe33db13/sqlPools/f2da35a0-16fe-4456-b0bf-b2355e843150/schemas/schema1/tables/table2",
+                                 "name": "table2",
+                                 "type": "Microsoft.Synapse/workspaces/sqlPools/schemas/tables"
+                               }
+                             ]
+                      }
+               }
+         }
+}
