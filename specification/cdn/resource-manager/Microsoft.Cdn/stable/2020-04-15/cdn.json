@@ -27,7 +27,7 @@
       "type": "oauth2",
       "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize",
       "flow": "implicit",
-      "description": "Azure Active Directory OAuth2 Flow.",
+      "description": "Azure Active Directory OAuth2 Flow.XXXX",
       "scopes": {
         "user_impersonation": "impersonate your user account"
       }
@@ -40,7 +40,7 @@
           "Profiles"
         ],
         "description": "Lists all of the CDN profiles within an Azure subscription.",
-        "operationId": "Profiles_List",
+        "operationId": "Profiles_ListXXX",
         "x-ms-examples": {
           "Profiles_List": {
             "$ref": "./examples/Profiles_List.json"
