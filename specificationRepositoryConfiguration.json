@@ -71,6 +71,7 @@
           "mainRepository": "openapi-env-test/azure-sdk-for-python"
         },
         "azure-cli-extensions": {
+          "mainBranch": "report-diff-test",
           "mainRepository": "openapi-env-test/azure-cli-extensions"
         },
         "azure-sdk-for-ruby": {
@@ -90,6 +91,10 @@
         "azure-sdk-for-net-shivangi": {
           "mainRepository": "openapi-env-test/azure-sdk-for-net",
           "mainBranch": "Shivangi_AutomationScript"
+        },
+        "azure-sdk-for-python-lmazuel": {
+          "mainRepository": "openapi-env-test/azure-sdk-for-python",
+          "mainBranch": "LMazuel_AutomationScript"
         },
         "azure-sdk-for-net-minghc": {
           "mainRepository": "openapi-env-test/azure-sdk-for-net",
