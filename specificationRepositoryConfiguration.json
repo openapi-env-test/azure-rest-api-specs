@@ -91,6 +91,10 @@
           "mainRepository": "openapi-env-test/azure-sdk-for-net",
           "mainBranch": "Shivangi_AutomationScript"
         },
+        "azure-sdk-for-python-lmazuel": {
+          "mainRepository": "openapi-env-test/azure-sdk-for-python",
+          "mainBranch": "LMazuel_AutomationScript"
+        },
         "azure-sdk-for-net-minghc": {
           "mainRepository": "openapi-env-test/azure-sdk-for-net",
           "mainBranch": "v-minghc_testScript"
