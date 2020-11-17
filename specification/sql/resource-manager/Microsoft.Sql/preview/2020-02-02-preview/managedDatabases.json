@@ -252,7 +252,7 @@
           "ManagedDatabases"
         ],
         "description": "Deletes a managed database.",
-        "operationId": "SQLBreakingChangeManagedDatabases_Delete",
+        "operationId": "ManagedDatabases_Delete",
         "parameters": [
           {
             "$ref": "../../../../../common-types/resource-management/v1/types.json#/parameters/ResourceGroupNameParameter"
