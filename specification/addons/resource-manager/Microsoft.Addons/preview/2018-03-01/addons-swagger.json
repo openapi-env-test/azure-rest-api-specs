@@ -32,7 +32,7 @@
         "tags": [
           "Operations"
         ],
-        "operationId": "Operations_List",
+        "operationId": "Operations_ListXXX",
         "description": "Lists all of the available Addons RP operationsx.",
         "x-ms-examples": {
           "Operations_List": {
