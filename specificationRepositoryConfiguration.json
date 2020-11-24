@@ -71,6 +71,7 @@
           "mainRepository": "openapi-env-test/azure-sdk-for-python"
         },
         "azure-cli-extensions": {
+          "mainBranch": "report-diff-test",
           "mainRepository": "openapi-env-test/azure-cli-extensions"
         },
         "azure-sdk-for-ruby": {
