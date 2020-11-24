@@ -742,6 +742,7 @@ HCRP
 HDFS
 hdinsight
 Headnode
+healthbot
 healthcareapis
 Heatbeat
 heatmap
@@ -1603,6 +1604,7 @@ SMBIOS
 snapshotrun
 snapshotsdr
 SNAT
+SNMP
 softwareplan
 SOHSV
 solaris
