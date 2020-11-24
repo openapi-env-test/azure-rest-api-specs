@@ -130,8 +130,8 @@
       },
       "delete": {
         "summary": "Delete Custom Model",
-        "description": "Update doc Mark model for deletion. Model artifacts will be permanently removed within a predetermined period.",
-        "operationId": "TestBreakingChangeDeleteCustomModel",
+        "description": "Test non breaking changes Update doc Mark model for deletion. Model artifacts will be permanently removed within a predetermined period.",
+        "operationId": "ChangeDeleteCustomModel",
         "consumes": [],
         "produces": [
           "application/json"
