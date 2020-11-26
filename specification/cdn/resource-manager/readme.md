@@ -4,7 +4,7 @@
 
 This is the AutoRest configuration file for Cdn.
 
-
+ 
  
 ---
 ## Getting Started 
