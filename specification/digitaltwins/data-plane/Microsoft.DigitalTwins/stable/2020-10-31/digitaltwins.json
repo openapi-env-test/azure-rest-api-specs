@@ -224,7 +224,7 @@
         "tags": [
           "Models"
         ],
-        "operationId": "DigitalTwinModels_Delete",
+        "operationId": "TestDigitalTwinModels_Delete",
         "description": "Deletes a model. A model can only be deleted if no other models reference it.\nStatus codes:\n* 204 No Content\n* 400 Bad Request\n  * InvalidArgument - The model id is invalid.\n  * MissingArgument - The model id was not provided.\n* 404 Not Found\n  * ModelNotFound - The model was not found.\n* 409 Conflict\n  * ModelReferencesNotDeleted - The model refers to models that are not deleted.",
         "x-ms-examples": {
           "Delete a model": {
