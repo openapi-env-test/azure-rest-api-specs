@@ -131,7 +131,7 @@
       "delete": {
         "summary": "Test Delete Custom Model",
         "description": "Test non breaking changes Update doc Mark model for deletion. Model artifacts will be permanently removed within a predetermined period.",
-        "operationId": "TestDeleteCustomModel",
+        "operationId": "DeleteCustomModel",
         "consumes": [],
         "produces": [
           "application/json"
