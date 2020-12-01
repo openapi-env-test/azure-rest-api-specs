@@ -73,7 +73,7 @@
         },
         "configFilePath": {
           // Path to swagger-to-sdk config in sdk repo
-          "default": "swagger_to_sdk_config.json"
+          "default": "eng/swagger_to_sdk_config.json"
         }
       },
       "required": ["mainRepository"]
