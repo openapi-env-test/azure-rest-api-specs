@@ -32,17 +32,6 @@
       "integrationRepository": "AzureSDKAutomation/azure-cli-extensions",
       "mainRepository": "Azure/azure-cli-extensions"
     },
-    "azure-sdk-for-ruby": {
-      "mainBranch": "latest",
-      "integrationRepository": "AzureSDKAutomation/azure-sdk-for-ruby",
-      "mainRepository": "Azure/azure-sdk-for-ruby"
-    },
-    "azure-sdk-for-trenton": {
-      "integrationRepository": "Azure/azure-sdk-for-trenton",
-      "mainRepository": "Azure/azure-sdk-for-trenton",
-      "secondaryRepository": "Azure/azure-sdk-for-trenton",
-      "secondaryBranch": "secondary"
-    },
     "azure-resource-manager-schemas": {
       "integrationRepository": "AzureSDKAutomation/azure-resource-manager-schemas",
       "mainRepository": "Azure/azure-resource-manager-schemas"
@@ -74,17 +63,6 @@
         "azure-cli-extensions": {
           "mainBranch": "report-diff-test",
           "mainRepository": "openapi-env-test/azure-cli-extensions"
-        },
-        "azure-sdk-for-ruby": {
-          "mainBranch": "latest",
-          "mainRepository": "openapi-env-test/azure-sdk-for-ruby"
-        },
-        "azure-sdk-for-node": "openapi-env-test/azure-sdk-for-node",
-        "azure-sdk-for-trenton": {
-          "integrationRepository": "test-repo-billy/azure-sdk-for-trenton",
-          "mainRepository": "test-repo-billy/azure-sdk-for-trenton",
-          "secondaryRepository":"test-repo-billy/azure-sdk-for-trenton",
-          "secondaryBranch":"secondary"
         },
         "azure-resource-manager-schemas": {
           "mainRepository": "openapi-env-test/azure-resource-manager-schemas"
