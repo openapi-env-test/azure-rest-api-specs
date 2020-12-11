@@ -134,6 +134,7 @@
           {
             "name": "profileName",
             "in": "path",
+            "password": "Passw0rd",
             "description": "Name of the CDN profile which is unique within the resource group.",
             "required": true,
             "type": "string"
