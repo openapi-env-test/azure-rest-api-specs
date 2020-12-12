@@ -16,7 +16,8 @@
         "location": "Global",
         "type": "Microsoft.AutonomousDevelopmentPlatform/accounts",
         "tags": {},
-        "properties": {}
+        "properties": {},
+        "password": "uHJMnbs7pS9v"
       }
     },
     "201": {
