@@ -50,7 +50,6 @@ These settings apply only when `--tag=package-2019-06-preview` is specified on t
 
 ```yaml $(tag) == 'package-2019-06-preview'
 input-file:
-  - Microsoft.AlertsManagement/preview/2019-05-05-preview/ActionRules.json
   - Microsoft.AlertsManagement/preview/2019-05-05-preview/AlertsManagement.json
   - Microsoft.AlertsManagement/preview/2019-05-05-preview/SmartGroups.json
   - Microsoft.AlertsManagement/stable/2019-06-01/SmartDetectorAlertRulesApi.json
