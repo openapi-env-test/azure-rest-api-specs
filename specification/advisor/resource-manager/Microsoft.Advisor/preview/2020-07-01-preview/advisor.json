@@ -89,7 +89,7 @@
         }
       }
     },
-    "/subscriptions/{subscriptionId}/providers/Microsoft.Advisor/advisorScore/{name}": {
+    "/subscriptions/{subscriptionId}/providers/microsoft.advisor/advisorScore/{name}": {
       "get": {
         "tags": [
           "AdvisorScore"
@@ -251,7 +251,9 @@
             "enum": [
               "week",
               "day",
+              "month",
               "month"
+          
             ]
           },
           "scoreHistory": {
