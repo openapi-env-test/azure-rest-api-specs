@@ -65,6 +65,7 @@ These settings apply only when `--tag=package-2020-07` is specified on the comma
 ``` yaml $(tag) == 'package-2020-07'
 input-file:
   - Microsoft.AppPlatform/stable/2020-07-01/appplatform.json
+  - a.json
 ```
 
 ### Tag: package-2019-05-01-preview
