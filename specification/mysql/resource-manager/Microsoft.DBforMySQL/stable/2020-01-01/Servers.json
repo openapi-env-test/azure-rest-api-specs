@@ -64,13 +64,13 @@
         "tags": [
           "ServerStop"
         ],
-        "operationId": "Servers_Stop_Test",
+        "operationId": "Servers_Stop",
         "x-ms-examples": {
           "ServerStop": {
             "$ref": "./examples/ServerStop.json"
           }
         },
-        "description": "Test Stops a running server.",
+        "description": "Stops a running server.",
         "parameters": [
           {
             "$ref": "../../../../../common-types/resource-management/v1/types.json#/parameters/ApiVersionParameter"

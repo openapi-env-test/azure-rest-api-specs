@@ -40,7 +40,7 @@
           "managedClusters"
         ],
         "operationId": "Operations_List",
-        "description": "Gets a list of compute operations.",
+        "description": "Minghc_Test_Gets a list of compute operations.",
         "parameters": [
           {
             "$ref": "#/parameters/ApiVersionParameter"
