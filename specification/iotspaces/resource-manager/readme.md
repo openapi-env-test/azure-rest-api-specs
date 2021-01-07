@@ -107,9 +107,3 @@ See configuration in [readme.azureresourceschema.md](./readme.azureresourceschem
 
 
 
-
-
-
-
-
-
