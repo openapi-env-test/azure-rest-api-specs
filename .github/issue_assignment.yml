@@ -3,6 +3,8 @@
     booleanFilterExpression: "Java"
     assignees:
       - ruowan
+      - jianyexi
+      - zhenglaizhang
 
 - rule:
     booleanFilterExpression: "Python"
