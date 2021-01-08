@@ -8,8 +8,8 @@ pr:
   autoCancel: false
 
 variables:
-  IMAGE: azopenapi.azurecr.io/openapi/sdk-automation:prod
-  REGISTRY_ENDPOINT: azopenapi-registry
+  IMAGE: azopenapitest.azurecr.io/openapi/sdk-automation:test
+  REGISTRY_ENDPOINT: openapi platform test acr registry
 
 jobs:
 - job: "SDKAutomation"
@@ -62,6 +62,7 @@ jobs:
       docker tag $IMAGE sdk-automation:latest
     displayName: Pull SDK Automation Image
   - script: |
+      printenv
       docker run \
         -e BLOB_PROXY_PREFIX \
         -e BLOB_STORAGE_PREFIX \
