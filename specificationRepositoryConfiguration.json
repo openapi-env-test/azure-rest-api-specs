@@ -84,6 +84,7 @@
         "azure-sdk-for-net-minghc": {
           "mainRepository": "openapi-env-test/azure-sdk-for-net",
           "mainBranch": "v-minghc_testScript"
+
         },
         "azure-sdk-for-trenton": {
           "integrationRepository": "test-repo-billy/azure-sdk-for-trenton",

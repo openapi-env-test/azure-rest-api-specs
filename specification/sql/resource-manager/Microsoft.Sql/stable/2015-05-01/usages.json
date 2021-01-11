@@ -101,7 +101,7 @@
         },
         "x-ms-examples": {
           "Get specific subscription usage in the given location.": {
-            "$ref": "./examples/SubscriptionUsageGet.json"
+            "$ref": "./examples/SubscriptionUsageGet11.json"
           }
         }
       }
