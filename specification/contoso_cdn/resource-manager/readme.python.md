@@ -10,18 +10,18 @@ python:
   azure-arm: true
   license-header: MICROSOFT_MIT_NO_VERSION
   payload-flattening-threshold: 2
-  namespace: azure.mgmt.cdn
-  package-name: azure-mgmt-cdn
+  namespace: azure.mgmt.contoso_cdn
+  package-name: azure-mgmt-contoso-cdn
   package-version: 2.0.0
   clear-output-folder: true
 ```
 ``` yaml $(python) && $(python-mode) == 'update'
 python:
   no-namespace-folders: true
-  output-folder: $(python-sdks-folder)/cdn/azure-mgmt-cdn/azure/mgmt/cdn
+  output-folder: $(python-sdks-folder)/contoso_cdn/azure-mgmt-cdn/azure/mgmt/contoso_cdn
 ```
 ``` yaml $(python) && $(python-mode) == 'create'
 python:
   basic-setup-py: true
-  output-folder: $(python-sdks-folder)/cdn/azure-mgmt-cdn
+  output-folder: $(python-sdks-folder)/contoso_cdn/azure-mgmt-cdn
 ```

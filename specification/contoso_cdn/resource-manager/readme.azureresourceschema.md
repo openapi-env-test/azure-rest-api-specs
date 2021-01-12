@@ -6,17 +6,7 @@ These settings apply only when `--azureresourceschema` is specified on the comma
 
 ``` yaml $(azureresourceschema) && $(multiapi)
 batch:
-  - tag: schema-cdn-2020-04-15
-  - tag: schema-cdn-2019-12-31
-  - tag: schema-cdn-2019-06-15-preview
-  - tag: schema-cdn-2019-06-15
-  - tag: schema-cdn-2019-04-15
-  - tag: schema-cdn-2017-10-12
-  - tag: schema-cdn-2017-04-02
-  - tag: schema-cdn-2016-10-02
-  - tag: schema-cdn-2016-04-02
-  - tag: schema-cdn-2015-06-01
-
+  - tag: schema-cdn-2020-09-01
 ```
 
 Please also specify `--azureresourceschema-folder=<path to the root directory of your azure-resource-manager-schemas clone>`.
