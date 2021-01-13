@@ -36,7 +36,7 @@ These settings apply only when `--tag=package-2018-05` is specified on the comma
 
 ```yaml $(tag) == 'package-2018-05'
 input-file:
-  - Microsoft.Network/stable/2018-05-01/dns.json
+  - Microsoft.Network/preview/2018-03-01-preview/dns.json
 directive:
   - where:
       - $.paths
