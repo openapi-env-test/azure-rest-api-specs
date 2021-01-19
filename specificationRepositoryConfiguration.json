@@ -77,6 +77,11 @@
           "mainBranch": "Shivangi_AutomationScript",
           "configFilePath": "eng/swagger_to_sdk_config.json"
         },
+        "azure-sdk-for-net-track2": {
+          "integrationRepository": "AzureSDKAutomation/azure-sdk-for-net",
+          "mainRepository": "Azure/azure-sdk-for-net",
+          "configFilePath": "eng/swagger_to_sdk_config.json"
+        },
         "azure-sdk-for-python-lmazuel": {
           "mainRepository": "openapi-env-test/azure-sdk-for-python",
           "mainBranch": "LMazuel_AutomationScript"
