@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "Security Insights",
-    "description": "API spec for Microsoft.SecurityInsights (Azure Security Insights) resource provider",
+    "description": "API spec for Microsoft.SecurityInsights (Azure Security Insights) x resource provider",
     "version": "2019-01-01-preview"
   },
   "host": "management.azure.com",
