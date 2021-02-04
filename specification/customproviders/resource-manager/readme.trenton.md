@@ -17,3 +17,19 @@ overrides:
     set:
     - IdPortion: "resourceproviders"
 ```
+
+## trenton
+
+These settings apply only when `--trenton` is specified on the command line.
+
+``` yaml $(trenton)
+trenton:
+    cli-name: customproviders
+    package-name: customproviders
+clear-output-folder: true
+output-folder: $(trenton-output-folder)/customproviders
+```
+
+```yaml $(tag) == 'package-2018-09-01-preview' && $(trenton)
+gosdk-folder: services/preview/customproviders/mgmt/2018-09-01-preview/customproviders
+```
