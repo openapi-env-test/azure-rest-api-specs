@@ -3,7 +3,7 @@
   "info": {
     "version": "2020-01-01",
     "title": "AdvisorManagementClient",
-    "description": "REST APIs for Azure Advisor"
+    "description": "REST APIs for Azure x Advisor"
   },
   "host": "management.azure.com",
   "schemes": [
