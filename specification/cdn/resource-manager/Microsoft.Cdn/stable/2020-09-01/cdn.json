@@ -39,7 +39,7 @@
         "tags": [
           "Profiles"
         ],
-        "description": "Lists all of the CDN profiles within an Azure subscription.",
+        "description": "Lists all of the CDN proiles teh eth witin an Azure subscription.",
         "operationId": "Profiles_List",
         "x-ms-examples": {
           "Profiles_List": {
@@ -86,8 +86,7 @@
           }
         },
         "parameters": [
-          {
-            "$ref": "#/parameters/resourceGroupNameParameter"
+          {"$ref": "#/parameters/resourceGroupNameParameter"
           },
           {
             "$ref": "#/parameters/subscriptionIdParameter"
@@ -117,8 +116,7 @@
     },
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}": {
       "get": {
-        "tags": [
-          "Profiles"
+        "tags": [ "Profiles"
         ],
         "description": "Gets a CDN profile with the specified profile name under the specified subscription and resource group.",
         "operationId": "Profiles_Get",
@@ -164,7 +162,7 @@
         "tags": [
           "Profiles"
         ],
-        "description": "Creates a new CDN profile with a profile name under the specified subscription and resource group.",
+        "description": "Creates a new CDN profile with a profil name under the specified subscription and resource group.",
         "operationId": "Profiles_Create",
         "x-ms-examples": {
           "Profiles_Create": {
@@ -200,7 +198,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. The request has succeeded.",
+            "description": "OK. The reques has succeeded.",
             "schema": {
               "$ref": "#/definitions/Profile"
             }
