@@ -59,6 +59,7 @@ This is not used by Autorest itself.
 swagger-to-sdk
   - repo: azure-sdk-for-trenton
   - repo: azure-sdk-for-trenton
+  - repo: azure-sdk-for-trenton
   - repo: azure-sdk-for-trenton:
   - repo: azure-resource-manager-schemas
     after_scripts:
