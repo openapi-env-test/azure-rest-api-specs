@@ -1,53 +1,32 @@
-## overrides
 
-These settings apply only when `--trenton` is specified on the command line.
-``` yaml $(trenton)
-overrides:
-  - where:
-      resource: "*"
-    set:
-      - NeedSeparated: true
-      - CombineCreateUpdate: true
-  - where:
-      resource: "ActionRules"
-      property: "properties"
-    set:
-      - GoFieldName: "Properties"
-  - where:
-      resource: "ActionRules"
-      method: "Update"
-      property: "properties"
-    set:
-      - GoFieldName: "PatchProperties"
-  - where:
-      property: "status"
-    set:
-      - Hidden: false
-  - where:
-      property: "type"
-    set:
-      - Hidden: true
-  - where:
-      resource: "ActionRules"
-      property: "/actionRule/properties/type"
-    set:
-      - Hidden: false
-  - where:
-      resource: "ActionRules"
-      property: "scopeType"
-    set:
-      - EnumValues/0/GoEnumMemberName: "ScopeTypeResourceGroup"
-      - EnumValues/1/GoEnumMemberName: "ScopeTypeResource"
-      - EnumValues/2/GoEnumMemberName: "ScopeTypeSubscription"
-```
 ## trenton
 
 These settings apply only when `--trenton` is specified on the command line.
 
 ``` yaml $(trenton)
 trenton:
-    cli-name: alertsManagement
+    cli-name: alertsmanagement
     package-name: alertsmanagement
 clear-output-folder: true
 output-folder: $(trenton-output-folder)/alertsmanagement
+```
+
+``` yaml $(tag) == 'package-2019-06-preview' && $(trenton)
+gosdk-folder: services/preview/alertsmanagement/mgmt/2019-06-01-preview/alertsmanagement
+```
+
+``` yaml $(tag) == 'package-preview-2019-05' && $(trenton)
+gosdk-folder: services/preview/alertsmanagement/mgmt/2019-05-05-preview/alertsmanagement
+```
+
+``` yaml $(tag) == 'package-2019-03' && $(trenton)
+gosdk-folder: services/alertsmanagement/mgmt/2019-03-01/alertsmanagement
+```
+
+``` yaml $(tag) == 'package-2018-05' && $(trenton)
+gosdk-folder: services/alertsmanagement/mgmt/2018-05-05/alertsmanagement
+```
+
+``` yaml $(tag) == 'package-2018-05-preview' && $(trenton)
+gosdk-folder: services/preview/alertsmanagement/mgmt/2018-05-05-preview/alertsmanagement
 ```
