@@ -23,6 +23,12 @@ To see additional help and options, run:
 ### Basic Information
 
 These are the global settings for the AlertManagement API.
+``` yaml
+title: AlertsManagementClient
+description: AlertsManagement Client
+openapi-type: arm
+tag: package-2019-06-preview
+```
 
 ### Suppression
 ``` yaml
@@ -35,13 +41,6 @@ directive:
     reason: The rule applied incorrectly to base class.
     where:
       - $.definitions.ManagedResource
-```
-
-``` yaml
-title: AlertsManagementClient
-description: AlertsManagement Client
-openapi-type: arm
-tag: package-2019-06-preview
 ```
 
 ### Tag: package-2019-06-preview
@@ -126,6 +125,7 @@ This is not used by Autorest itself.
 
 ``` yaml $(swagger-to-sdk)
 swagger-to-sdk:
+  - repo: azure-sdk-for-trenton
   - repo: azure-sdk-for-net
   - repo: azure-sdk-for-python
   - repo: azure-libraries-for-java
