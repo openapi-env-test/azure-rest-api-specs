@@ -60,6 +60,17 @@ batch:
   - tag: package-managedapplications-2017-09
   - tag: package-managedapplications-2016-09
   - tag: package-resources-2019-07
+  - tag: package-preview-2020-08
+```
+
+### Tag: package-preview-2020-08 and go
+
+These settings apply only when `--tag=package-preview-2020-08 --go` is specified on the command line.
+Please also specify `--go-sdk-folder=<path to the root directory of your azure-sdk-for-go clone>`.
+
+``` yaml $(tag) == 'package-preview-2020-08' && $(go)
+namespace: templatespecs
+output-folder: $(go-sdk-folder)/services/preview/resources/mgmt/2020-08-preview/$(namespace)
 ```
 
 ### Tag: package-templatespecs-2019-06-preview and go
