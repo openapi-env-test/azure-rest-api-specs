@@ -24,8 +24,10 @@ To see additional help and options, run:
 
 These are the global settings for the Resource API.
 
-``` yaml
-openapi-type: arm
+``` yaml
+title: Resources
+openapi-type: arm
+tag: package-deploymentscripts-2019-10-preview
 ```
 
 ``` yaml $(package-features)

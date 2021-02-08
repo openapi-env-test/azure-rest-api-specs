@@ -23,6 +23,7 @@ go:
 ``` yaml $(go) && $(multiapi)
 batch:
   - tag: package-templatespecs-2019-06-preview
+  - tag: package-deploymentscripts-2019-10-preview
   - tag: package-features-2015-12
   - tag: package-locks-2016-09
   - tag: package-locks-2015-01
@@ -60,6 +61,16 @@ batch:
   - tag: package-managedapplications-2017-09
   - tag: package-managedapplications-2016-09
   - tag: package-resources-2019-07
+```
+
+### Tag: package-deploymentscripts-2019-10-preview and go
+
+These settings apply only when `--tag=package-deploymentscripts-2019-10-preview --go` is specified on the command line.
+Please also specify `--go-sdk-folder=<path to the root directory of your azure-sdk-for-go clone>`.
+
+``` yaml $(tag) == 'package-deploymentscripts-2019-10-preview' && $(go)
+namespace: templatespecs
+output-folder: $(go-sdk-folder)/services/preview/resources/mgmt/2019-10-preview/$(namespace)
 ```
 
 ### Tag: package-templatespecs-2019-06-preview and go
