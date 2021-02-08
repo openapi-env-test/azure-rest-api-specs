@@ -26,7 +26,7 @@ These are the global settings for the Authorization API.
 
 ``` yaml
 openapi-type: arm
-tag: package-2020-04-01-preview-only
+tag: package-2018-05-01-preview
 ```
 
 ### Suppression
@@ -271,6 +271,7 @@ This is not used by Autorest itself.
 ``` yaml $(swagger-to-sdk)
 swagger-to-sdk:
   - repo: azure-sdk-for-net
+  - repo: azure-sdk-for-trenton
   - repo: azure-sdk-for-python
     after_scripts:
       - python ./scripts/multiapi_init_gen.py azure-mgmt-authorization --default-api-version=2018-09-01-preview
