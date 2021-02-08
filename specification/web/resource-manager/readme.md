@@ -34,7 +34,7 @@ These are the global settings for the Web API.
 title: WebSiteManagementClient
 description: WebSite Management Client
 openapi-type: arm
-tag: package-2020-09
+tag: package-2016-08-only
 ```
 
 ### Suppression
@@ -1108,6 +1108,7 @@ This is not used by Autorest itself.
 ``` yaml $(swagger-to-sdk)
 swagger-to-sdk:
   - repo: azure-sdk-for-net
+  - repo: azure-sdk-for-trenton
   - repo: azure-sdk-for-python
     autorest_options:
       use: "@microsoft.azure/autorest.python@4.0.70"
