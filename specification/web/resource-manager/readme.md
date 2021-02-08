@@ -34,7 +34,7 @@ These are the global settings for the Web API.
 title: WebSiteManagementClient
 description: WebSite Management Client
 openapi-type: arm
-tag: package-2020-09
+tag: package-2016-09-01-web
 ```
 
 ### Suppression
@@ -1115,6 +1115,7 @@ swagger-to-sdk:
       - python ./scripts/multiapi_init_gen.py azure-mgmt-web
       - python ./scripts/trim_aio.py ./sdk/appservice/azure-mgmt-web
   - repo: azure-sdk-for-java
+  - repo: azure-sdk-for-trenton
   - repo: azure-sdk-for-go
   - repo: azure-sdk-for-node
   - repo: azure-sdk-for-js
