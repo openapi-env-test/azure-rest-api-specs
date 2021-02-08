@@ -51,6 +51,17 @@ batch:
   - tag: package-container-service-2016-09
   - tag: package-container-service-2016-03
   - tag: package-container-service-2015-11-preview
+  - tag: package-2019-03-01-only
+```
+
+### Tag: package-2019-03-01-only and go
+
+These settings apply only when `--tag=package-2019-03-01-only --go` is specified on the command line.
+Please also specify `--go-sdk-folder=<path to the root directory of your azure-sdk-for-go clone>`.
+
+```yaml $(tag)=='package-2019-03-01-only' && $(go)
+namespace: compute
+output-folder: $(go-sdk-folder)/services/preview/$(namespace)/mgmt/2019-03-01/$(namespace)
 ```
 
 ### Tag: package-2020-10-01-preview and go
