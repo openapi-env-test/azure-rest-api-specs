@@ -24,8 +24,10 @@ To see additional help and options, run:
 
 These are the global settings for the Resource API.
 
-``` yaml
-openapi-type: arm
+``` yaml
+title: Resources
+openapi-type: arm
+tag: package-templatespecs-2019-06-preview
 ```
 
 ``` yaml $(package-features)
@@ -722,6 +724,7 @@ This is not used by Autorest itself.
 ``` yaml $(swagger-to-sdk)
 swagger-to-sdk:
   - repo: azure-sdk-for-net
+  - repo: azure-sdk-for-trenton
   - repo: azure-sdk-for-python
     after_scripts:
       - python ./scripts/multiapi_init_gen.py azure-mgmt-resource#features
