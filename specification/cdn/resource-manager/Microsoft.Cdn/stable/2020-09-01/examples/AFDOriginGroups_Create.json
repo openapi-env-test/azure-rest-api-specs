@@ -2,7 +2,6 @@
   "parameters": {
     "api-version": "2020-09-01",
     "subscriptionId": "subid",
-    "resourceGroupName": "RG",
     "profileName": "profile1",
     "originGroupName": "origingroup1",
     "originGroup": {
@@ -29,11 +28,6 @@
         "type": "Microsoft.Cdn/profiles/origingroups",
         "name": "origingroup1",
         "properties": {
-          "loadBalancingSettings": {
-            "sampleSize": 3,
-            "successfulSamplesRequired": 3,
-            "additionalLatencyInMilliseconds": 1000
-          },
           "healthProbeSettings": {
             "probePath": "/path1",
             "probeRequestType": "HEAD",
@@ -54,7 +48,6 @@
         "name": "origingroup1",
         "properties": {
           "loadBalancingSettings": {
-            "sampleSize": 3,
             "successfulSamplesRequired": 3,
             "additionalLatencyInMilliseconds": 1000
           },
