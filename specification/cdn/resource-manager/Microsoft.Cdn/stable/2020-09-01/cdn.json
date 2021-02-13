@@ -10,10 +10,10 @@
     "https"
   ],
   "consumes": [
-    "application/json"
+    "application/octet-stream"
   ],
   "produces": [
-    "application/json"
+    "application/octet-stream"
   ],
   "security": [
     {
@@ -132,6 +132,13 @@
             "$ref": "#/parameters/resourceGroupNameParameter"
           },
           {
+            "name": "profileName",
+            "in": "path",
+            "description": "Name of the CDN profile which is unique within the resource group.",
+            "required": true,
+            "type": "string"
+          },
+           {
             "name": "profileName",
             "in": "path",
             "description": "Name of the CDN profile which is unique within the resource group.",
