@@ -148,6 +148,7 @@ swagger-to-sdk:
   - repo: azure-resource-manager-schemas
     after_scripts:
       - node sdkauto_afterscript.js keyvault/resource-manager
+
 ```
 
 ## Go
