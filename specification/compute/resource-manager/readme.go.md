@@ -31,27 +31,7 @@ directive:
 
 ```yaml $(go) && $(multiapi)
 batch:
-  - tag: package-2020-12-01
-  - tag: package-2020-10-01-preview
-  - tag: profile-hybrid-2020-09-01
-  - tag: package-2020-06-30
   - tag: package-2020-06-01
-  - tag: package-2019-12-01
-  - tag: package-2019-07
-  - tag: package-2019-03-01
-  - tag: package-2018-10-01
-  - tag: package-2018-06
-  - tag: package-compute-2018-04
-  - tag: package-compute-2017-12
-  - tag: package-compute-2017-03
-  - tag: package-compute-2016-04-preview
-  - tag: package-compute-2016-03
-  - tag: package-compute-2015-06
-  - tag: package-skus-2017-09
-  - tag: package-container-service-2017-01
-  - tag: package-container-service-2016-09
-  - tag: package-container-service-2016-03
-  - tag: package-container-service-2015-11-preview
 ```
 
 ### Tag: package-2020-12-01 and go
