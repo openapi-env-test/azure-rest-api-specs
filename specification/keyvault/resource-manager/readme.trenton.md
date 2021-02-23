@@ -30,3 +30,5 @@ gosdk-folder: services/keyvault/mgmt/2016-10-01/keyvault
 ``` yaml $(tag) == 'package-2015-06' && $(trenton)
 gosdk-folder: services/keyvault/mgmt/2015-06-01/keyvault
 ```
+
+
