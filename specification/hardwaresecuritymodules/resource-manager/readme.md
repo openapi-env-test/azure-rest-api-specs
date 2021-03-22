@@ -56,6 +56,7 @@ This is not used by Autorest itself.
 
 ``` yaml $(swagger-to-sdk)
 swagger-to-sdk:
+  - repo: azure-sdk-for-terraform
   - repo: azure-cli-extensions
   - repo: azure-resource-manager-schemas
     after_scripts:
