@@ -52,6 +52,9 @@
             "schema": {
               "$ref": "#/definitions/OperationsList"
             }
+          },
+          "404": {
+            "description": "OK. Successfully retrieved operations list."
           }
         },
         "x-ms-pageable": {
