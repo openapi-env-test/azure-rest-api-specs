@@ -75,3 +75,43 @@ overrides:
     set:
       - GoFieldName: "SslStatus"
 ```
+## terraform
+
+These settings apply only when `--terraform` is specified on the command line.
+
+``` yaml $(terraform)
+terraform:
+    cli-name: databoxedge
+    package-name: databoxedge
+clear-output-folder: true
+output-folder: $(terraform-output-folder)/databoxedge
+```
+
+```yaml $(tag) == 'package-2020-12-01' && $(terraform)
+gosdk-folder: services/databoxedge/mgmt/2020-12-01/databoxedge
+```
+
+```yaml $(tag) == 'package-2020-09-01-preview' && $(terraform)
+gosdk-folder: services/preview/databoxedge/mgmt/2020-09-01-preview/databoxedge
+
+```
+
+```yaml $(tag) == 'package-2020-09-01' && $(terraform)
+gosdk-folder: services/databoxedge/mgmt/2020-09-01/databoxedge
+```
+
+```yaml $(tag) == 'package-2020-05-preview' && $(terraform)
+gosdk-folder: services/preview/databoxedge/mgmt/2020-05-01-preview/databoxedge
+```
+
+```yaml $(tag) == 'package-2019-08' && $(terraform)
+gosdk-folder: services/databoxedge/mgmt/2019-08-01/databoxedge
+```
+
+```yaml $(tag) == 'package-2019-07' && $(terraform)
+gosdk-folder: services/databoxedge/mgmt/2019-07-01/databoxedge
+```
+
+```yaml $(tag) == 'package-2019-03' && $(terraform)
+gosdk-folder: services/databoxedge/mgmt/2019-03-01/databoxedge
+```
