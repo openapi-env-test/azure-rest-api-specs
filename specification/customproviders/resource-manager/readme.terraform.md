@@ -17,3 +17,19 @@ overrides:
     set:
     - IdPortion: "resourceproviders"
 ```
+
+## terraform
+
+These settings apply only when `--terraform` is specified on the command line.
+
+``` yaml $(terraform)
+terraform:
+    cli-name: customproviders
+    package-name: customproviders
+clear-output-folder: true
+output-folder: $(terraform-output-folder)/customproviders
+```
+
+```yaml $(tag) == 'package-2018-09-01-preview' && $(terraform)
+gosdk-folder: services/preview/customproviders/mgmt/2018-09-01-preview/customproviders
+```
