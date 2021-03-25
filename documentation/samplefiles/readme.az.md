@@ -1,6 +1,6 @@
 ## AZ
 
-These settings apply only when `--az` is specified on the command line.
+These settings apply only when `--az` is specified on the command line. test
 
 For new Resource Provider. It is highly recommended to onboard Azure CLI extensions. There's no differences in terms of customer usage. 
 
