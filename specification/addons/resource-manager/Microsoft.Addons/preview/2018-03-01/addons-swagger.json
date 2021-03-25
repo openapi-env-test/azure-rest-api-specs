@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "Azure Addons Resource Provider",
-    "description": "The service for managing third party addons.",
+    "description": "The service for managing third party addons no sync.",
     "version": "2018-03-01"
   },
   "host": "management.azure.com",
