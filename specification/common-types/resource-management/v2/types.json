@@ -8,7 +8,7 @@
   "definitions": {
     "Resource": {
       "title": "Resource",
-      "description": "Common fields that are returned in the response for all Azure Resource Manager resources add update to common-types abc",
+      "description": "Common fields that are returned in the response for all Azure Resource Manager resources add update to common-types",
       "properties": {
         "id": {
           "readOnly": true,
