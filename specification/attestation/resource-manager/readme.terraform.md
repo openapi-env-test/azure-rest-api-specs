@@ -19,3 +19,11 @@ overrides:
     set:
       - GoFieldName: Properties
 ```
+
+``` yaml $(tag) == 'package-2018-09-01' && $(terraform)
+gosdk-folder: services/attestation/mgmt/2018-09-01/attestation
+```
+
+``` yaml $(tag) == 'package-2020-10-01' && $(terraform)
+gosdk-folder: services/attestation/mgmt/2020-10-01/attestation
+```
