@@ -1780,8 +1780,7 @@
           "$ref": "#/definitions/AwsCloudTrailDataConnectorDataTypes",
           "description": "The available data types for the connector."
         }
-      },
-      "type": "object"
+      }
     },
     "Bookmark": {
       "allOf": [
