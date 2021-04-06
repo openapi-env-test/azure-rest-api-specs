@@ -29,6 +29,20 @@ openapi-type: arm
 tag: package-composite-v1
 ```
 
+### Tag: package-composite-v2
+
+These settings apply only when `--tag=package-composite-v2` is specified on the command line.
+
+```yaml $(tag) == 'package-composite-v2'
+input-file:
+- Microsoft.SecurityInsights/stable/2020-01-02/SecurityInsights.json
+directive:
+  - suppress: R2059
+    from: Microsoft.SecurityInsights/stable/2020-01-01/SecurityInsights.json
+    reason: it's not actually a resource path; the validator is confused because the LogAnalytics namespace is in the URI path.
+    approved-by: "@lirenhe"
+```
+
 ### Tag: package-composite-v1
 
 These settings apply only when `--tag=package-composite-v1` is specified on the command line.
