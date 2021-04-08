@@ -3,7 +3,7 @@
   "info": {
     "version": "2020-05-01",
     "title": "SignalRManagementClient",
-    "description": "REST API for Azure SignalR Service"
+    "description": "REST API for Azure SignalR Service "
   },
   "host": "management.azure.com",
   "schemes": [
