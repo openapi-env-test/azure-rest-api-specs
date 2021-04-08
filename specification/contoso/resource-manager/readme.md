@@ -1,8 +1,8 @@
-# adp
+# contoso
 
 > see https://aka.ms/autorest
 
-This is the AutoRest configuration file for adp.
+This is the AutoRest configuration file for contoso.
 
 ## Getting Started
 
@@ -22,27 +22,20 @@ For other options on installation see [Installing AutoRest](https://aka.ms/autor
 
 ### Basic Information
 
-These are the global settings for the adp.
+These are the global settings for the contoso.
 
 ```yaml
-title: AdpManagementClient
 openapi-type: arm
-openapi-subtype: rpaas
-tag: package-2021-02-01-preview
+tag: package-2020-12-21
 ```
 
-```yaml $(tag) == 'package-2020-07-01-preview'
-version: 2020-07-01-preview
-version-with-underscores: 2020_07_01_preview
-input-file:
-  - Microsoft.AutonomousDevelopmentPlatform/preview/2020-07-01-preview/adp.json
-```
+### Tag: package-2020-12-21
 
-```yaml $(tag) == 'package-2021-02-01-preview'
-version: 2021-02-01-preview
-version-with-underscores: 2021_02_01_preview
+These settings apply only when `--tag=package-2020-12-21` is specified on the command line.
+
+```yaml $(tag) == 'package-2020-12-21'
 input-file:
-  - Microsoft.AutonomousDevelopmentPlatform/preview/2021-02-01-preview/adp.json
+  - Microsoft.Contoso/preview/2020-12-21/contoso.json
 ```
 
 ---
@@ -56,19 +49,18 @@ This is not used by Autorest itself.
 
 ```yaml $(swagger-to-sdk)
 swagger-to-sdk:
-  - repo: azure-sdk-for-python-track2
+  - repo: azure-sdk-for-python
   - repo: azure-sdk-for-java
-  - repo: azure-sdk-for-terraform
   - repo: azure-sdk-for-go
   - repo: azure-sdk-for-js
-  - repo: azure-sdk-for-ruby
-    after_scripts:
-      - bundle install && rake arm:regen_all_profiles['azure_mgmt_adp']
-  - repo: azure-cli-extensions
   - repo: azure-resource-manager-schemas
     after_scripts:
-      - node sdkauto_afterscript.js adp/resource-manager
+      - node sdkauto_afterscript.js contoso/resource-manager
+  - repo: azure-cli-extensions
 ```
+## Az
+
+See configuration in [readme.az.md](./readme.az.md)
 
 ## Go
 
@@ -77,10 +69,6 @@ See configuration in [readme.go.md](./readme.go.md)
 ## Python
 
 See configuration in [readme.python.md](./readme.python.md)
-
-## Ruby
-
-See configuration in [readme.ruby.md](./readme.ruby.md)
 
 ## TypeScript
 
