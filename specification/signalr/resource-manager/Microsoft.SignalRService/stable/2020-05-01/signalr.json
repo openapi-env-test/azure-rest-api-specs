@@ -1486,6 +1486,10 @@
         "privateLinkServiceConnectionState": {
           "$ref": "#/definitions/PrivateLinkServiceConnectionState",
           "description": "Connection state"
+        },
+        "foo": {
+          "type": "string",
+          "description": "Fake property"
         }
       }
     },
