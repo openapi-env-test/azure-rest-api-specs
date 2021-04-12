@@ -45,11 +45,6 @@
   "overrides": {
     "openapi-env-test/azure-rest-api-specs": {
       "sdkRepositoryMappings": {
-        "azure-sdk-for-terraform": {
-          "integrationRepository": "test-repo-billy/azure-sdk-for-trenton",
-          "mainRepository": "test-repo-billy/azure-sdk-for-trenton",
-          "mainBranch": "secondary"
-        },
         "azure-resource-manager-schemas": {
           "mainRepository": "openapi-env-test/azure-resource-manager-schemas"
         }
