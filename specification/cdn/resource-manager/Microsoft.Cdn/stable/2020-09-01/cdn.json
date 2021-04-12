@@ -78,7 +78,7 @@
         "tags": [
           "Profiles"
         ],
-        "description": "Lists all of the CDN profiles within a resource group.",
+        "description": "Lists all of the CDN profiles within a resource group TEST.",
         "operationId": "Profiles_ListByResourceGroup",
         "x-ms-examples": {
           "Profiles_ListByResourceGroup": {
