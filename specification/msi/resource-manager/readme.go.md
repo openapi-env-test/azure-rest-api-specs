@@ -23,7 +23,7 @@ These settings apply only when `--tag=package-2018-11-30 --go` is specified on t
 Please also specify `--go-sdk-folder=<path to the root directory of your azure-sdk-for-go clone>`.
 
 ``` yaml $(tag) == 'package-2018-11-30' && $(go)
-output-folder: $(go-sdk-folder)/services/$(namespace)/mgmt/2018-11-30/$(namespace)
+output-folder: $(go-sdk-folder)/services/$(namespace)/mgmt/2018-11-31/$(namespace)
 ```
 
 ### Tag: package-2015-08-31-preview and go
