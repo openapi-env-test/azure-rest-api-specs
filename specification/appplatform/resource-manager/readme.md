@@ -96,6 +96,7 @@ This is not used by Autorest itself.
 
 ``` yaml $(swagger-to-sdk)
 swagger-to-sdk:
+  - repo: azure-sdk-for-terraform
   - repo: azure-powershell
   - repo: azure-sdk-for-python
     after_scripts:
