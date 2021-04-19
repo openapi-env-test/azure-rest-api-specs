@@ -34,7 +34,7 @@
         ],
         "summary": "List live events",
         "description": "Lists all the live events in the account.",
-        "operationId": "LiveEvents_List",
+        "operationId": "LiveEventsTest_List",
         "parameters": [
           {
             "$ref": "#/parameters/SubscriptionId"
