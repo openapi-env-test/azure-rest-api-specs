@@ -79,9 +79,6 @@
         "operationId": "AlertRules_List",
         "parameters": [
           {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
             "$ref": "#/parameters/SubscriptionId"
           },
           {
