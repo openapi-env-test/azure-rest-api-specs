@@ -957,6 +957,7 @@ Kubelet
 kubenet
 kubernetes
 kusto
+kustooperations
 kvset
 l'avion
 labaccounts
@@ -2091,6 +2092,7 @@ webjob
 webjobs
 webproxy
 webpubsub
+WebPubSub
 websearch
 webservices
 Webspace
@@ -2145,3 +2147,8 @@ ziplist
 Zoho
 zoneinfo
 zset
+testfailover
+Orignal
+Onprem
+targetv
+Seleted
