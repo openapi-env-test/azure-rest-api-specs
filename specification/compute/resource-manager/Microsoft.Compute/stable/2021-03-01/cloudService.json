@@ -15,7 +15,7 @@
         "tags": [
           "CloudServiceRoleInstances"
         ],
-        "description": "Deletes a role instance from a cloud service.",
+        "description": "Deletes a role instance from a cloud service xx.",
         "operationId": "CloudServiceRoleInstances_Delete",
         "parameters": [
           {
