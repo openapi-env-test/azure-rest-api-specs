@@ -61,16 +61,6 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "Gets the list Network status details for all regions in which service is deployed.",
-            "schema": {
-              "type": "array",
-              "items": {
-                "$ref": "#/definitions/NetworkStatusContractByLocation"
-              },
-              "description": "List of Network Status values."
-            }
-          },
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
@@ -85,7 +75,7 @@
         "tags": [
           "NetworkStatus"
         ],
-        "operationId": "NetworkStatus_ListByLocation",
+        "operationId": "NetworkStatus_ListByLocationABC",
         "description": "Gets the Connectivity Status to the external resources on which the Api Management service depends from inside the Cloud Service. This also returns the DNS Servers as visible to the CloudService.",
         "x-ms-examples": {
           "ApiManagementServiceGetNetworkStatusByLocation": {
@@ -197,7 +187,7 @@
     "NetworkStatusContract": {
       "properties": {
         "dnsServers": {
-          "type": "array",
+          "type": "object",
           "items": {
             "type": "string"
           },
@@ -212,7 +202,6 @@
         }
       },
       "required": [
-        "dnsServers",
         "connectivityStatus"
       ],
       "description": "Network Status details."
