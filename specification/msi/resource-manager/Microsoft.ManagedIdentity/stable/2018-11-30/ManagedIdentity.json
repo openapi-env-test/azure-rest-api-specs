@@ -67,42 +67,6 @@
         }
       }
     },
-    "/subscriptions/{subscriptionId}/providers/Microsoft.ManagedIdentity/userAssignedIdentities": {
-      "get": {
-        "operationId": "UserAssignedIdentities_ListBySubscription",
-        "description": "Lists all the userAssignedIdentities available under the specified subscription.",
-        "x-ms-examples": {
-          "IdentityListBySubscription": {
-            "$ref": "./examples/IdentityListBySubscription.json"
-          }
-        },
-        "parameters": [
-          {
-            "$ref": "#/parameters/SubscriptionIdParameter"
-          },
-          {
-            "$ref": "#/parameters/ApiVersionParameter"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK. The list of userAssignedIdentities was retrieved and returned successfully.",
-            "schema": {
-              "$ref": "#/definitions/UserAssignedIdentitiesListResult"
-            }
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-pageable": {
-          "nextLinkName": "nextLink"
-        }
-      }
-    },
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities": {
       "get": {
         "operationId": "UserAssignedIdentities_ListByResourceGroup",

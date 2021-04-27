@@ -73,55 +73,13 @@
         }
       }
     },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles": {
-      "get": {
-        "tags": [
-          "Profiles"
-        ],
-        "description": "Lists all of the CDN profiles within a resource group.",
-        "operationId": "Profiles_ListByResourceGroup",
-        "x-ms-examples": {
-          "Profiles_ListByResourceGroup": {
-            "$ref": "./examples/Profiles_ListByResourceGroup.json"
-          }
-        },
-        "parameters": [
-          {
-            "$ref": "#/parameters/resourceGroupNameParameter"
-          },
-          {
-            "$ref": "#/parameters/subscriptionIdParameter"
-          },
-          {
-            "$ref": "#/parameters/apiVersionParameter"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK. The request has succeeded.",
-            "schema": {
-              "$ref": "#/definitions/ProfileListResult"
-            }
-          },
-          "default": {
-            "description": "CDN error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          }
-        },
-        "x-ms-pageable": {
-          "nextLinkName": "nextLink"
-        }
-      }
-    },
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}": {
       "get": {
         "tags": [
           "Profiles"
         ],
         "description": "Gets a CDN profile with the specified profile name under the specified subscription and resource group.",
-        "operationId": "Profiles_Get",
+        "operationId": "Profiles_GetABreakingChange",
         "x-ms-examples": {
           "Profiles_Get": {
             "$ref": "./examples/Profiles_Get.json"
