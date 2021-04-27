@@ -34,39 +34,6 @@
     }
   },
   "paths": {
-    "/{scope}/providers/Microsoft.ManagedIdentity/identities/default": {
-      "get": {
-        "operationId": "SystemAssignedIdentities_GetByScope",
-        "description": "Gets the systemAssignedIdentity available under the specified RP scope.",
-        "x-ms-examples": {
-          "MsiOperationsList": {
-            "$ref": "./examples/SystemAssignedIdentityGet.json"
-          }
-        },
-        "parameters": [
-          {
-            "$ref": "#/parameters/ScopeParameter"
-          },
-          {
-            "$ref": "#/parameters/ApiVersionParameter"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK. The systemAssignedIdentity was retrieved and returned successfully.",
-            "schema": {
-              "$ref": "#/definitions/SystemAssignedIdentity"
-            }
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        }
-      }
-    },
     "/providers/Microsoft.ManagedIdentity/operations": {
       "get": {
         "operationId": "Operations_List",
@@ -86,42 +53,6 @@
             "description": "The operation was successful. The response contains the list of available operations.",
             "schema": {
               "$ref": "#/definitions/OperationListResult"
-            }
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-pageable": {
-          "nextLinkName": "nextLink"
-        }
-      }
-    },
-    "/subscriptions/{subscriptionId}/providers/Microsoft.ManagedIdentity/userAssignedIdentities": {
-      "get": {
-        "operationId": "UserAssignedIdentities_ListBySubscription",
-        "description": "Lists all the userAssignedIdentities available under the specified subscription.",
-        "x-ms-examples": {
-          "IdentityListBySubscription": {
-            "$ref": "./examples/IdentityListBySubscription.json"
-          }
-        },
-        "parameters": [
-          {
-            "$ref": "#/parameters/SubscriptionIdParameter"
-          },
-          {
-            "$ref": "#/parameters/ApiVersionParameter"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK. The list of userAssignedIdentities was retrieved and returned successfully.",
-            "schema": {
-              "$ref": "#/definitions/UserAssignedIdentitiesListResult"
             }
           },
           "default": {
