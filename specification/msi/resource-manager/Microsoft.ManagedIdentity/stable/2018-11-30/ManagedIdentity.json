@@ -34,39 +34,6 @@
     }
   },
   "paths": {
-    "/{scope}/providers/Microsoft.ManagedIdentity/identities/default": {
-      "get": {
-        "operationId": "SystemAssignedIdentities_GetByScope",
-        "description": "Gets the systemAssignedIdentity available under the specified RP scope.",
-        "x-ms-examples": {
-          "MsiOperationsList": {
-            "$ref": "./examples/SystemAssignedIdentityGet.json"
-          }
-        },
-        "parameters": [
-          {
-            "$ref": "#/parameters/ScopeParameter"
-          },
-          {
-            "$ref": "#/parameters/ApiVersionParameter"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK. The systemAssignedIdentity was retrieved and returned successfully.",
-            "schema": {
-              "$ref": "#/definitions/SystemAssignedIdentity"
-            }
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        }
-      }
-    },
     "/providers/Microsoft.ManagedIdentity/operations": {
       "get": {
         "operationId": "Operations_List",
