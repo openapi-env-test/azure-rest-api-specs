@@ -67,39 +67,6 @@
         }
       }
     },
-    "/providers/Microsoft.ManagedIdentity/operations": {
-      "get": {
-        "operationId": "Operations_List",
-        "description": "Lists available operations for the Microsoft.ManagedIdentity provider",
-        "x-ms-examples": {
-          "MsiOperationsList": {
-            "$ref": "./examples/MsiOperationsList.json"
-          }
-        },
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersionParameter"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "The operation was successful. The response contains the list of available operations.",
-            "schema": {
-              "$ref": "#/definitions/OperationListResult"
-            }
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-pageable": {
-          "nextLinkName": "nextLink"
-        }
-      }
-    },
     "/subscriptions/{subscriptionId}/providers/Microsoft.ManagedIdentity/userAssignedIdentities": {
       "get": {
         "operationId": "UserAssignedIdentities_ListBySubscription",
