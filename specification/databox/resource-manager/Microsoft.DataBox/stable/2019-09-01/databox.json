@@ -2390,7 +2390,7 @@
           ],
           "type": "string",
           "x-ms-enum": {
-            "name": "JobDeliveryType",
+            "name": "DemoType",
             "modelAsExtensible": true,
             "values": [
               {
@@ -2406,8 +2406,26 @@
           "default": "NonScheduled"
         },
         "deliveryInfo": {
-          "$ref": "#/definitions/JobDeliveryInfo",
-          "description": "Delivery Info of Job."
+          "description": "Delivery Info of Job.",
+          "enum": [
+            "NonDemo",
+            "Demo"
+          ],
+          "type": "string",
+          "x-ms-enum": {
+            "name": "DemoType",
+            "modelAsExtensible": true,
+            "values": [
+              {
+                "value": "NonDemo",
+                "description": "Non Demo."
+              },
+              {
+                "value": "Demo",
+                "description": "Demo."
+              }
+            ]
+          }
         },
         "isCancellableWithoutFee": {
           "description": "Flag to indicate cancellation of scheduled job.",
