@@ -9090,6 +9090,10 @@
             "type": "string"
           },
           "description": "The virtual machine zones."
+        },
+        "extendedLocation": {
+          "$ref": "#/definitions/ExtendedLocation",
+          "description": "The extended location of the Virtual Machine."
         }
       },
       "allOf": [
@@ -9411,6 +9415,10 @@
         "properties": {
           "x-ms-client-flatten": true,
           "$ref": "#/definitions/ImageProperties"
+        },
+        "extendedLocation": {
+          "$ref": "#/definitions/ExtendedLocation",
+          "description": "The extended location of the Image."
         }
       },
       "allOf": [
@@ -10532,6 +10540,10 @@
             "type": "string"
           },
           "description": "The virtual machine scale set zones. NOTE: Availability zones can only be set when you create the scale set"
+        },
+        "extendedLocation": {
+          "$ref": "#/definitions/ExtendedLocation",
+          "description": "The extended location of the Virtual Machine Scale Set."
         }
       },
       "allOf": [
@@ -11485,6 +11497,34 @@
         }
       },
       "x-ms-azure-resource": true
+    },
+    "ExtendedLocationType": {
+      "type": "string",
+      "description": "The supported ExtendedLocation types. Currently only EdgeZone is supported in Microsoft.Compute resources.",
+      "enum": [
+        "EdgeZone"
+      ],
+      "x-ms-enum": {
+        "name": "ExtendedLocationTypes",
+        "modelAsString": true
+      }
+    },
+    "ExtendedLocation": {
+      "description": "ExtendedLocation complex type.",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The name of the extended location."
+        },
+        "type": {
+          "$ref": "#/definitions/ExtendedLocationType",
+          "description": "The type of the extended location."
+        }
+      },
+      "required": [
+        "name",
+        "type"
+      ]
     },
     "RecoveryWalkResponse": {
       "properties": {
