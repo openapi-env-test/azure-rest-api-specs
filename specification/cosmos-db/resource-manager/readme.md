@@ -27,7 +27,13 @@ These are the global settings for the Cosmos-DB API.
 ``` yaml
 title: CosmosDBManagementClient
 openapi-type: arm
+openapi-subtype: providerHub
 tag: package-2021-04
+```
+
+``` yaml
+providerHub-specifications:
+ - Microsoft.DocumentDB/stable/2021-04-15/rbac.json
 ```
 
 ### Tag: package-2021-04

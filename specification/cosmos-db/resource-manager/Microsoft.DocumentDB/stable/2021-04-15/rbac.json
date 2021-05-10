@@ -42,7 +42,7 @@
             "$ref": "./examples/CosmosDBSqlRoleDefinitionGet.json"
           }
         },
-        "description": "Retrieves the properties of an existing Azure Cosmos DB SQL Role Definition with the given Id.",
+        "description": "Retrieves the properties of an  Azure Cosmos DB SQL Role Definition with the given Id.",
         "parameters": [
           {
             "$ref": "#/parameters/roleDefinitionIdParameter"
