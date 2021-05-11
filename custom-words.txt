@@ -718,6 +718,8 @@ generatevpnprofile
 geobias
 geocode
 geocodes
+geodata
+Geodata
 Geofence
 geofences
 Geofencing
@@ -2190,3 +2192,4 @@ PPSX
 PPTM
 XLSM
 DOCM
+multislot
