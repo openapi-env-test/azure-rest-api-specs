@@ -47,12 +47,7 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/AvailableOperations"
-            }
-          },
+         
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
