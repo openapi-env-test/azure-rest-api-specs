@@ -91,12 +91,7 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "Paged Result response of Apis.",
-            "schema": {
-              "$ref": "./definitions.json#/definitions/ApiCollection"
-            }
-          },
+         
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
