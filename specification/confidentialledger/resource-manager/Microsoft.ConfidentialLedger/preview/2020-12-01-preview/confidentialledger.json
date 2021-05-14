@@ -40,7 +40,7 @@
           "Operations"
         ],
         "operationId": "Operations_List",
-        "description": "Retrieves a list of available API operations",
+        "description": "Retrieves a list of available API ",
         "summary": "Retrieves a list of available API operations under this Resource Provider.",
         "parameters": [
           {
