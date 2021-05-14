@@ -230,11 +230,6 @@
               "$ref": "#/definitions/ErrorResponse"
             }
           }
-        },
-        "x-ms-examples": {
-          "Get account": {
-            "$ref": "./examples/AdpAccountGet.json"
-          }
         }
       },
       "patch": {
@@ -383,11 +378,6 @@
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
-          }
-        },
-        "x-ms-examples": {
-          "Delete account": {
-            "$ref": "./examples/AdpAccountDelete.json"
           }
         }
       }
