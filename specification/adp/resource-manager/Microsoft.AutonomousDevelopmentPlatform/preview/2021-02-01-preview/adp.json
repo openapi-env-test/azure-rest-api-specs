@@ -41,11 +41,6 @@
         ],
         "description": "Lists all of the available Autonomous Development Platform provider operations",
         "operationId": "Operations_List",
-        "x-ms-examples": {
-          "List operations": {
-            "$ref": "./examples/AdpOperationsList.json"
-          }
-        },
         "parameters": [
           {
             "$ref": "../../../../../common-types/resource-management/v1/types.json#/parameters/ApiVersionParameter"
@@ -241,7 +236,7 @@
         "tags": [
           "Accounts"
         ],
-        "operationId": "Accounts_Update",
+        "operationId": "Accounts_UpdateABDC",
         "x-ms-long-running-operation": true,
         "description": "Updates the properties of an existing ADP account",
         "parameters": [
