@@ -75,56 +75,6 @@
         }
       }
     },
-    "/subscriptions/{subscriptionId}/providers/Microsoft.Confluent/agreements/default": {
-      "put": {
-        "tags": [
-          "Agreements"
-        ],
-        "summary": "Accept marketplace terms.",
-        "operationId": "MarketplaceAgreements_Create",
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersionParameter"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionIdParameter"
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "description": "Confluent Agreement resource",
-            "schema": {
-              "$ref": "#/definitions/ConfluentAgreementResource"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/ConfluentAgreementResource"
-            }
-          },
-          "default": {
-            "description": "Default error response.",
-            "schema": {
-              "$ref": "#/definitions/ResourceProviderDefaultErrorResponse"
-            }
-          }
-        },
-        "x-ms-examples": {
-          "MarketplaceAgreements_Create": {
-            "$ref": "./examples/MarketplaceAgreements_Create.json"
-          }
-        }
-      }
-    },
     "/providers/Microsoft.Confluent/operations": {
       "get": {
         "tags": [
