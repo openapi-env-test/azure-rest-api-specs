@@ -27,7 +27,7 @@
       "type": "oauth2",
       "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize",
       "flow": "implicit",
-      "description": "Azure Active Directory OAuth2 Flow",
+      "description": "Azure Active Directory OAuth2 Flow afaf",
       "scopes": {
         "user_impersonation": "impersonate your user account"
       }
@@ -41,11 +41,6 @@
         ],
         "description": "Lists all of the available Autonomous Development Platform provider operations",
         "operationId": "Operations_List",
-        "x-ms-examples": {
-          "List operations": {
-            "$ref": "./examples/AdpOperationsList.json"
-          }
-        },
         "parameters": [
           {
             "$ref": "../../../../../common-types/resource-management/v1/types.json#/parameters/ApiVersionParameter"
@@ -161,11 +156,6 @@
         ],
         "operationId": "Accounts_ListByResourceGroup",
         "description": "List all ADP accounts available under the resource group",
-        "x-ms-examples": {
-          "List accounts by resource group": {
-            "$ref": "./examples/AdpAccountsListByResourceGroup.json"
-          }
-        },
         "parameters": [
           {
             "$ref": "../../../../../common-types/resource-management/v1/types.json#/parameters/SubscriptionIdParameter"
