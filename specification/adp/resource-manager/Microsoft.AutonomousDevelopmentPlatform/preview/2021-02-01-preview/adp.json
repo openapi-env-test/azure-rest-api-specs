@@ -241,7 +241,7 @@
         "tags": [
           "Accounts"
         ],
-        "operationId": "Accounts_Update",
+        "operationId": "Accounts_UpdateABDC",
         "x-ms-long-running-operation": true,
         "description": "Updates the properties of an existing ADP account",
         "parameters": [
