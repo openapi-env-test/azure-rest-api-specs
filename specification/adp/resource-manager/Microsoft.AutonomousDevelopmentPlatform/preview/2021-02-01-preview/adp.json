@@ -156,11 +156,6 @@
         ],
         "operationId": "Accounts_ListByResourceGroup",
         "description": "List all ADP accounts available under the resource group",
-        "x-ms-examples": {
-          "List accounts by resource group": {
-            "$ref": "./examples/AdpAccountsListByResourceGroup.json"
-          }
-        },
         "parameters": [
           {
             "$ref": "../../../../../common-types/resource-management/v1/types.json#/parameters/SubscriptionIdParameter"
