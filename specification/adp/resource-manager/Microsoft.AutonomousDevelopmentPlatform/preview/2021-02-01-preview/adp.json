@@ -3,7 +3,7 @@
   "info": {
     "version": "2021-02-01-preview",
     "title": "adp",
-    "description": "Microsoft Autonomous Development Platform"
+    "description": "Microsoft Autonomous Development Platform abcd"
   },
   "host": "management.azure.com",
   "schemes": [
@@ -75,7 +75,7 @@
         "tags": [
           "Accounts"
         ],
-        "operationId": "Accounts_CheckNameAvailability",
+        "operationId": "Accounts_CheckNameAvailabilityABC",
         "description": "Checks that the account name is valid and is not already in use",
         "x-ms-examples": {
           "AccountCheckNameAvailability": {
