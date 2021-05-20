@@ -41,11 +41,6 @@
         ],
         "description": "Lists all of the CDN profiles within an Azure subscription.",
         "operationId": "Profiles_ListABCD",
-        "x-ms-examples": {
-          "Profiles_List": {
-            "$ref": "./examples/Profiles_List.json"
-          }
-        },
         "parameters": [
           {
             "$ref": "#/parameters/subscriptionIdParameter"
@@ -122,11 +117,6 @@
         ],
         "description": "Gets a CDN profile with the specified profile name under the specified subscription and resource group.",
         "operationId": "Profiles_Get",
-        "x-ms-examples": {
-          "Profiles_Get": {
-            "$ref": "./examples/Profiles_Get.json"
-          }
-        },
         "parameters": [
           {
             "$ref": "#/parameters/resourceGroupNameParameter"
@@ -232,11 +222,6 @@
         ],
         "description": "Updates an existing CDN profile with the specified profile name under the specified subscription and resource group.",
         "operationId": "Profiles_Update",
-        "x-ms-examples": {
-          "Profiles_Update": {
-            "$ref": "./examples/Profiles_Update.json"
-          }
-        },
         "parameters": [
           {
             "$ref": "#/parameters/resourceGroupNameParameter"
@@ -291,7 +276,7 @@
           "Profiles"
         ],
         "description": "Deletes an existing CDN profile with the specified parameters. Deleting a profile will result in the deletion of all of the sub-resources including endpoints, origins and custom domains.",
-        "operationId": "Profiles_Delete",
+        "operationId": "Profiles_DeleteABC",
         "x-ms-examples": {
           "Profiles_Delete": {
             "$ref": "./examples/Profiles_Delete.json"
