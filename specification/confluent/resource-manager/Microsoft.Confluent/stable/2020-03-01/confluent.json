@@ -412,56 +412,6 @@
             "$ref": "./examples/Organization_Update.json"
           }
         }
-      },
-      "delete": {
-        "tags": [
-          "Organization"
-        ],
-        "summary": "Delete Organization resource",
-        "operationId": "Organization_Delete",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersionParameter"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionIdParameter"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupParameter"
-          },
-          {
-            "$ref": "#/parameters/OrganizationResourceNameParameter"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          },
-          "202": {
-            "description": "Accepted"
-          },
-          "204": {
-            "description": "NoContent"
-          },
-          "default": {
-            "description": "Default error response.",
-            "schema": {
-              "$ref": "#/definitions/ResourceProviderDefaultErrorResponse"
-            }
-          }
-        },
-        "x-ms-long-running-operation": true,
-        "x-ms-long-running-operation-options": {
-          "final-state-via": "location"
-        },
-        "x-ms-examples": {
-          "Confluent_Delete": {
-            "$ref": "./examples/Organization_Delete.json"
-          }
-        }
       }
     }
   },
