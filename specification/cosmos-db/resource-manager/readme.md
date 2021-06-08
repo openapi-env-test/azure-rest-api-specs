@@ -45,6 +45,26 @@ modelerfour:
   lenient-model-deduplication: true
 ```
 
+``` yaml
+providerHub-specifications:
+ - Microsoft.DocumentDB/stable/2021-04-15/rbac.json
+```
+
+### Tag: package-2021-04-01
+
+These settings apply only when `--tag=package-2021-04-01` is specified on the command line.
+
+```yaml $(tag) == 'package-2021-04-01'
+input-file:
+  - Microsoft.DocumentDB/stable/2021-04-16/cosmos-db.json
+  - Microsoft.DocumentDB/stable/2021-04-16/notebook.json
+  - Microsoft.DocumentDB/stable/2021-04-16/privateLinkResources.json
+  - Microsoft.DocumentDB/stable/2021-04-16/privateEndpointConnection.json
+modelerfour:
+  lenient-model-deduplication: true
+```
+
+
 ### Tag: package-2021-04
 
 These settings apply only when `--tag=package-2021-04` is specified on the command line.
@@ -53,7 +73,6 @@ These settings apply only when `--tag=package-2021-04` is specified on the comma
 input-file:
   - Microsoft.DocumentDB/stable/2021-04-15/cosmos-db.json
   - Microsoft.DocumentDB/stable/2021-04-15/notebook.json
-  - Microsoft.DocumentDB/stable/2021-04-15/rbac.json
   - Microsoft.DocumentDB/stable/2021-04-15/privateLinkResources.json
   - Microsoft.DocumentDB/stable/2021-04-15/privateEndpointConnection.json
 modelerfour:
