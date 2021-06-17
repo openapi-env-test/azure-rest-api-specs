@@ -38,26 +38,6 @@ clear-output-folder: true
 batch:
   - tag: package-2021-03-01-only
   - tag: package-2020-12-01-only
-  - tag: package-2020-10-01-preview-only
-  - tag: package-2020-09-30-only
-  - tag: package-2020-06-30-only
-  - tag: package-2020-06-01-only
-  - tag: package-2020-05-01-only
-  - tag: package-2019-12-01-only
-  - tag: package-2019-11-01-only
-  - tag: package-2019-07-01-only
-  - tag: package-2019-04-01-only
-  - tag: package-2019-03-01-only
-  - tag: package-2018-10-01-only
-  - tag: package-2018-09-30-only
-  - tag: package-compute-only-2018-06
-  - tag: package-compute-2018-04
-  - tag: package-compute-only-2017-12
-  - tag: package-skus-2017-09
-  - tag: package-compute-2017-03
-  - tag: package-compute-2016-04-preview
-  - tag: package-compute-2016-03
-  - tag: package-compute-2015-06
   - multiapiscript: true
 ```
 
