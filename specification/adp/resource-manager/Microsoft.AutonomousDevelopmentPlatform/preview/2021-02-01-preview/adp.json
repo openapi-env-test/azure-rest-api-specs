@@ -101,7 +101,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK -- Operation to check the account name availability was successful",
+            "description": "OK -- Operation to check the account name availability was successful.",
             "schema": {
               "$ref": "#/definitions/CheckNameAvailabilityResult"
             }
