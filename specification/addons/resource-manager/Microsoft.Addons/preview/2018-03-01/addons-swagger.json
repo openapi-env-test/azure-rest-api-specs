@@ -65,7 +65,7 @@
         "tags": [
           "AddonDetails"
         ],
-        "operationId": "SupportPlanTypes_Get",
+        "operationId": "SupportPlanTypes_GetABC",
         "description": "Returns whether or not the canonical support plan of type {type} is enabled for the subscription.",
         "x-ms-examples": {
           "SupportPlanTypes_Get": {
