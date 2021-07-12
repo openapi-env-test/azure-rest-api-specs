@@ -3131,6 +3131,9 @@
           },
           "Create a VM with UserData": {
             "$ref": "./examples/compute/CreateOrUpdateAVmWithUserData.json"
+          },
+          "Create a vm with Application Profile.": {
+            "$ref": "./examples/compute/CreateAVmWithApplicationProfile.json"
           }
         }
       },
@@ -4734,6 +4737,9 @@
           },
           "Create a scale set with userData.": {
             "$ref": "./examples/compute/CreateOrUpdateAScaleSetWithUserData.json"
+          },
+          "Create a scale set with Application Profile": {
+            "$ref": "./examples/compute/CreateAScaleSetWithApplicationProfile.json"
           }
         }
       },
@@ -10025,6 +10031,45 @@
       },
       "description": "Specifies the Security profile settings for the virtual machine or virtual machine scale set."
     },
+    "VMGalleryApplication": {
+      "type": "object",
+      "properties": {
+        "tags": {
+          "type": "string",
+          "description": "Optional, Specifies a passthrough value for more generic context."
+        },
+        "order": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Optional, Specifies the order in which the packages have to be installed"
+        },
+        "packageReferenceId": {
+          "type": "string",
+          "description": "Specifies the GalleryApplicationVersion resource id on the form of /subscriptions/{SubscriptionId}/resourceGroups/{ResourceGroupName}/providers/Microsoft.Compute/galleries/{galleryName}/applications/{application}/versions/{version}"
+        },
+        "configurationReference": {
+          "type": "string",
+          "description": "Optional, Specifies the uri to an azure blob that will replace the default configuration for the package if provided"
+        }
+      },
+      "required": [
+        "packageReferenceId"
+      ],
+      "description": "Specifies the required information to reference a compute gallery application version"
+    },
+    "ApplicationProfile": {
+      "type": "object",
+      "properties": {
+        "galleryApplications": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/VMGalleryApplication"
+          },
+          "description": "Specifies the gallery applications that should be made available to the VM/VMSS"
+        }
+      },
+      "description": "Contains the list of gallery applications that should be made available to the VM/VMSS"
+    },
     "AdditionalCapabilities": {
       "properties": {
         "ultraSSDEnabled": {
@@ -11047,6 +11092,10 @@
         "userData": {
           "type": "string",
           "description": "UserData for the VM, which must be base-64 encoded. Customer should not pass any secrets in here. <br><br>Minimum api-version: 2021-03-01"
+        },
+        "applicationProfile": {
+          "$ref": "#/definitions/ApplicationProfile",
+          "description": "Specifies the gallery applications that should be made available to the VM/VMSS"
         }
       },
       "description": "Describes the properties of a Virtual Machine."
@@ -12452,6 +12501,10 @@
         "userData": {
           "type": "string",
           "description": "UserData for the virtual machines in the scale set, which must be base-64 encoded. Customer should not pass any secrets in here. <br><br>Minimum api-version: 2021-03-01"
+        },
+        "applicationProfile": {
+          "$ref": "#/definitions/ApplicationProfile",
+          "description": "Specifies the gallery applications that should be made available to the VM/VMSS"
         }
       },
       "description": "Describes a virtual machine scale set virtual machine profile."
